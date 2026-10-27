@@ -1,0 +1,7 @@
+# Apache configuration for PPKS Landing Page
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Route /api/chat to api/ask.php on PHP/Apache servers
+  RewriteRule ^api/chat/?$ api/ask.php [L,QSA]
+</IfModule>

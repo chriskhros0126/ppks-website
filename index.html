@@ -1,0 +1,2942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PPKS Baking & Cooking Academy, Kota Kinabalu. 2-year chef course, 9 certificates. JPK Jabatan Pembangunan Kemahiran. Practical allowance RM1,500/month or above. WhatsApp Chef Ang 017-864 0709." />
+  <title>PPKS 烘焙烹饪学院 | Kota Kinabalu</title>
+  <link rel="canonical" href="https://ppks-landing.vercel.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ppks-landing.vercel.app/" />
+  <meta property="og:title" content="PPKS 烘焙烹饪学院 | Kota Kinabalu" />
+  <meta property="og:description" id="ogDesc" content="PPKS Baking & Cooking Academy, Kota Kinabalu. 2-year chef course, 9 certificates. Practical allowance RM1,500/month or above. WhatsApp Chef Ang 017-864 0709." />
+  <meta property="og:image" content="https://ppks-landing.vercel.app/assets/og-share.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_MY" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PPKS 烘焙烹饪学院 | Kota Kinabalu" />
+  <meta name="twitter:description" id="twDesc" content="PPKS Baking & Cooking Academy, Kota Kinabalu. 2-year chef course, 9 certificates. WhatsApp Chef Ang 017-864 0709." />
+  <meta name="twitter:image" content="https://ppks-landing.vercel.app/assets/og-share.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" type="image/jpeg" href="assets/ppks-logo.jpg" />
+  <link rel="apple-touch-icon" href="assets/ppks-logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fffdfc;
+      --bg-alt: #f8f5f2;
+      --bg-elevated: #ffffff;
+      --text: #241f20;
+      --text-muted: #5f5657;
+      --liver: #8b2635;
+      --liver-deep: #7a1f2b;
+      --ink: #651722;
+      --liver-soft: #c48990;
+      --liver-wash: #f3e8e8;
+      --gold: var(--liver);
+      --gold-soft: var(--liver-soft);
+      --gold-dim: var(--liver-wash);
+      --accent: var(--liver);
+      --accent-bright: var(--liver-deep);
+      --line: rgba(0, 0, 0, 0.08);
+      --line-gold: rgba(154, 77, 86, 0.28);
+      --paper: #ffffff;
+      --wa: var(--liver);
+      --radius: 18px;
+      --radius-sm: 12px;
+      --nav-h: 64px;
+      --font-display: "Manrope", "Noto Sans SC", sans-serif;
+      --font-body: "Manrope", "Noto Sans SC", sans-serif;
+      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+      --max: 1120px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; color-scheme: light; }
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    ::selection { background: var(--liver-wash); color: var(--liver-deep); }
+    :focus-visible { outline: 2px solid var(--liver); outline-offset: 3px; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: #d2d2d7; border-radius: 99px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); border: 0; white-space: nowrap;
+    }
+    .skip-link {
+      position: absolute; left: 1rem; top: -5rem; z-index: 10001;
+      background: var(--liver); color: #fff;
+      padding: 0.75rem 1.15rem; border-radius: 980px;
+      font-weight: 600; font-size: 0.9rem;
+    }
+    .skip-link:focus { top: 0.75rem; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 1000;
+      height: var(--nav-h);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 1.25rem;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; line-height: 1.15; }
+    .nav-logo img {
+      display: block; height: 48px; width: auto;
+      background: #fff; border-radius: 8px;
+    }
+    .nav-logo span {
+      font-size: 0.72rem; letter-spacing: -0.01em;
+      color: var(--text-muted); font-weight: 500; max-width: 9.5rem;
+    }
+    @media (max-width: 420px) { .nav-logo span { display: none; } }
+    .nav-links { display: none; gap: 0.15rem; list-style: none; margin: 0; padding: 0; }
+    .nav-links a {
+      font-size: 0.78rem; color: var(--text);
+      font-weight: 400; padding: 0.45rem 0.7rem; border-radius: 980px;
+    }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--liver); background: var(--liver-wash); }
+    .nav-actions { display: flex; align-items: center; gap: 0.65rem; }
+    .nav-toggle {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border: 0;
+      background: var(--bg-alt); color: var(--text); border-radius: 980px;
+    }
+    .nav-toggle span {
+      display: block; width: 14px; height: 1.5px; background: currentColor; position: relative;
+    }
+    .nav-toggle span::before, .nav-toggle span::after {
+      content: ""; position: absolute; left: 0; width: 14px; height: 1.5px; background: currentColor;
+    }
+    .nav-toggle span::before { top: -5px; }
+    .nav-toggle span::after { top: 5px; }
+    .nav-mobile {
+      display: none; position: absolute; top: var(--nav-h); left: 0.75rem; right: 0.75rem;
+      background: rgba(255,255,255,0.96); border: 1px solid var(--line);
+      border-radius: 18px; backdrop-filter: blur(20px);
+      padding: 0.85rem; flex-direction: column; gap: 0.2rem;
+      box-shadow: var(--shadow);
+    }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a {
+      color: var(--text); padding: 0.75rem 0.85rem; border-radius: 12px; font-weight: 500;
+    }
+    .nav-mobile a:hover { background: var(--liver-wash); color: var(--liver-deep); }
+    @media (min-width: 900px) {
+      .nav { padding: 0 2.5rem; }
+      .nav-links { display: flex; }
+      .nav-toggle { display: none; }
+    }
+    .nav-tools { display: flex; align-items: center; gap: 0.45rem; }
+    .lang-toggle, .track-toggle {
+      display: inline-flex; border: 1px solid var(--line); border-radius: 980px; overflow: hidden;
+      background: var(--bg-alt);
+    }
+    .lang-toggle button, .track-toggle a {
+      background: transparent; color: var(--text-muted); border: 0;
+      padding: 0.32rem 0.62rem; font-size: 0.68rem; font-weight: 600;
+    }
+    .lang-toggle button.is-on, .track-toggle a.is-on {
+      background: #fff; color: var(--liver-deep); box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .nav-logo, .nav-actions, .nav-tools { flex-shrink: 0; }
+    .lang-toggle button, .track-toggle a, .nav-actions .btn { white-space: nowrap; }
+    /* Phone: Kitchen/Facial lives in the menu; keep one tidy row */
+    @media (max-width: 599px) {
+      .nav { padding: 0 0.75rem; }
+      .nav-logo img { height: 38px; }
+      .nav-actions { gap: 0.4rem; }
+      .nav-tools .track-toggle { display: none; }
+      .nav-actions .btn-sm { padding: 0.5rem 0.8rem; font-size: 0.8rem; }
+      .nav-toggle { width: 36px; height: 36px; }
+    }
+    .zh-pair { display: block; margin-top: 0.2rem; font-size: 0.82em; color: var(--text-muted); font-weight: 500; }
+    html[lang="zh-CN"] .zh-pair { display: none; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      padding: 0.85rem 1.35rem;
+      border: 1px solid transparent;
+      border-radius: 980px;
+      font-size: 0.94rem; font-weight: 500; letter-spacing: -0.01em;
+      transition: background 0.2s var(--ease), color 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .btn-gold, .btn-wa {
+      background: var(--liver);
+      color: #fff;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    }
+    .btn-gold:hover, .btn-wa:hover {
+      background: var(--liver-deep);
+      color: #fff;
+    }
+    .btn-outline {
+      background: var(--bg-alt);
+      color: var(--text);
+      border-color: transparent;
+    }
+    .btn-outline:hover {
+      background: var(--liver-wash);
+      color: var(--liver-deep);
+    }
+    .btn-pill { border-radius: 980px; padding: 0.62rem 1.05rem; }
+    .btn-sm { padding: 0.55rem 0.95rem; font-size: 0.86rem; }
+
+    .hero {
+      position: relative;
+      background: var(--bg);
+      display: flex; flex-direction: column; align-items: center;
+      padding: 4.5rem 1.25rem 2.5rem;
+      overflow: hidden;
+    }
+    @media (min-width: 900px) {
+      .hero {
+        padding: 6.5rem 2.5rem 3.5rem;
+        flex-direction: row; align-items: center; justify-content: center; gap: 2.5rem;
+      }
+      .hero-content { text-align: left; width: min(520px, 100%); padding: 0; }
+      .hero-stage { width: min(480px, 100%); }
+      .hero-sub { margin-left: 0; margin-right: 0; }
+      .hero-ctas { justify-content: flex-start; }
+      .hero-pills { justify-content: flex-start; }
+    }
+    .hero-content {
+      position: relative; z-index: 1;
+      width: min(820px, 100%);
+      text-align: center;
+      padding: 0 0 2.5rem;
+    }
+    .hero-brand {
+      font-family: var(--font-display);
+      font-size: 0.92rem; font-weight: 600; line-height: 1.3;
+      letter-spacing: -0.01em; color: var(--liver);
+      margin: 0 0 0.85rem;
+    }
+    .hero-brand em {
+      display: block; font-style: normal; font-weight: 500;
+      font-size: 0.95em; color: var(--text-muted); margin-top: 0.25rem;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 7vw, 4.6rem);
+      font-weight: 600; line-height: 1.05;
+      letter-spacing: -0.035em;
+      margin: 0 0 1.15rem;
+    }
+    .hero-sub {
+      color: var(--text-muted); font-size: 1.15rem; max-width: 46ch;
+      margin: 0 auto 1.75rem; line-height: 1.55;
+    }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; }
+    .hero-stage {
+      position: relative;
+      width: min(980px, 100%);
+      border-radius: 28px;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: var(--bg-alt);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+    }
+    .hero-video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .trust {
+      background: var(--bg);
+      padding: 0.85rem 1.25rem 2.5rem;
+    }
+    .trust-inner {
+      display: flex; gap: 0; justify-content: center; flex-wrap: wrap;
+      max-width: var(--max); margin: 0 auto;
+      font-size: 0.78rem; color: var(--text-muted); font-weight: 500;
+    }
+    .trust-inner span { white-space: nowrap; padding: 0.3rem 0.95rem; position: relative; }
+    .trust-inner span:not(:last-child)::after {
+      content: ""; position: absolute; right: 0; top: 50%;
+      width: 3px; height: 3px; border-radius: 50%;
+      background: var(--liver-soft);
+      transform: translateY(-50%);
+    }
+    .trust-inner strong { color: var(--text); font-weight: 600; }
+
+    section { padding: 5rem 1.25rem; position: relative; }
+    @media (min-width: 900px) { section { padding: 7rem 2.5rem; } }
+    .section-inner { max-width: var(--max); margin: 0 auto; }
+    .eyebrow { display: none; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 4.4vw, 3.4rem);
+      font-weight: 600; line-height: 1.08; margin: 0 0 0.7rem;
+      letter-spacing: -0.035em;
+    }
+    .section-lead {
+      color: var(--text-muted); max-width: 52ch; margin: 0 0 2.75rem;
+      font-size: 1.15rem;
+    }
+    .rule { display: none; }
+
+    .reveal {
+      opacity: 0; transform: translateY(16px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+      .marquee-row--left .marquee-track,
+      .marquee-row--right .marquee-track {
+        animation: none;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: var(--max);
+        margin: 0 auto;
+        justify-content: center;
+      }
+      .marquee-row--left .marquee-track .marquee-item:nth-child(n+7),
+      .marquee-row--right .marquee-track .marquee-item:nth-child(n+7) { display: none; }
+    }
+
+    .courses { background: var(--bg-alt); }
+    .course-grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 720px) {
+      .course-grid { grid-template-columns: 1fr 1fr; gap: 1.35rem; align-items: stretch; }
+    }
+    @media (min-width: 1080px) {
+      .course-grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .course-card {
+      position: relative;
+      display: flex; flex-direction: column;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 1.7rem 1.45rem 1.45rem;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+    }
+    .course-card.featured {
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08);
+      border-color: rgba(154, 77, 86, 0.18);
+    }
+    .course-card::before, .course-card::after { content: none; }
+    .course-badge {
+      position: absolute; top: 1.1rem; right: 1.1rem; z-index: 2;
+      font-size: 0.68rem; font-weight: 600;
+      padding: 0.32rem 0.62rem; border-radius: 980px;
+      background: var(--liver-wash); color: var(--liver-deep);
+    }
+    .course-badge.alt { background: var(--bg-alt); color: var(--text-muted); }
+    .course-card h3 {
+      font-family: var(--font-display); font-size: 1.55rem; margin: 0 0 0.4rem;
+      letter-spacing: -0.03em; padding-right: 5rem; font-weight: 600;
+    }
+    .course-meta { font-size: 0.92rem; color: var(--text-muted); margin-bottom: 1.2rem; }
+    .price-panel {
+      margin-bottom: 1.25rem; padding: 1rem 1.05rem;
+      border-radius: 16px;
+      background: var(--liver-wash);
+    }
+    .price-panel.gold { background: var(--liver-wash); }
+    .price-panel-label {
+      font-size: 0.72rem; color: var(--text-muted); font-weight: 600; margin: 0 0 0.4rem;
+    }
+    .price-row { display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap; }
+    .price-old { text-decoration: line-through; color: var(--text-muted); font-size: 1rem; }
+    .price-new {
+      font-family: var(--font-display); font-size: clamp(1.7rem, 3vw, 2.15rem);
+      color: var(--liver-deep); font-weight: 600; letter-spacing: -0.03em; line-height: 1.1;
+    }
+    .price-earned { color: var(--liver-deep) !important; }
+    .price-save {
+      display: inline-flex; margin-top: 0.65rem;
+      font-size: 0.72rem; font-weight: 600;
+      color: var(--liver-deep); background: #fff;
+      padding: 0.28rem 0.6rem; border-radius: 980px;
+    }
+    .price-note { display: block; margin-top: 0.45rem; font-size: 0.82rem; color: var(--text-muted); }
+    .course-list { list-style: none; margin: 0 0 1.4rem; padding: 0; display: grid; gap: 0.6rem; flex: 1; }
+    .course-list li {
+      position: relative; padding-left: 1.2rem;
+      font-size: 0.92rem; color: var(--text-muted);
+    }
+    .course-list li::before {
+      content: ""; position: absolute; left: 0; top: 0.45em;
+      width: 6px; height: 6px; border-radius: 50%; background: var(--liver-soft);
+    }
+    .course-card .btn { width: 100%; margin-top: auto; }
+
+    .curriculum-list {
+      list-style: none; margin: 0; padding: 0;
+      display: grid; gap: 0.75rem;
+    }
+    @media (min-width: 720px) { .curriculum-list { grid-template-columns: 1fr 1fr; } }
+    .curriculum-list li {
+      display: flex; gap: 0.85rem; align-items: flex-start;
+      padding: 1rem 1.05rem;
+      background: #fff; border: 1px solid var(--line); border-radius: 16px;
+    }
+    .curriculum-list b {
+      color: var(--liver); font-variant-numeric: tabular-nums;
+      font-weight: 600; min-width: 1.6rem;
+    }
+    .curriculum-list small { display: block; color: var(--text-muted); font-size: 0.82em; }
+
+    .gallery { background: var(--bg); padding-left: 0; padding-right: 0; overflow: hidden; }
+    .gallery .section-inner { padding: 0 1.25rem; }
+    @media (min-width: 900px) { .gallery .section-inner { padding: 0 2.5rem; } }
+    .marquee { margin-top: 0.5rem; display: grid; gap: 0.85rem; }
+    .marquee-row {
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    }
+    .marquee-track { display: flex; width: max-content; gap: 0.85rem; }
+    .marquee-row--left .marquee-track { animation: marqueeLeft 55s linear infinite; }
+    .marquee-row--right .marquee-track { animation: marqueeRight 60s linear infinite; }
+    .marquee-row:hover .marquee-track { animation-play-state: paused; }
+    @keyframes marqueeLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes marqueeRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+    .marquee-item {
+      flex: 0 0 auto; width: min(72vw, 280px); aspect-ratio: 4 / 5;
+      border: 0; padding: 0; background: var(--bg-alt);
+      border-radius: 20px; overflow: hidden; position: relative; cursor: zoom-in;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    }
+    .marquee-row--right .marquee-item { width: min(68vw, 250px); aspect-ratio: 3 / 4; }
+    .marquee-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s var(--ease); }
+    .marquee-item::after {
+      content: attr(data-caption);
+      position: absolute; left: 0; right: 0; bottom: 0;
+      padding: 2rem 0.9rem 0.85rem;
+      background: linear-gradient(transparent, rgba(29,29,31,0.72));
+      color: #fff; font-size: 0.78rem; font-weight: 500; text-align: left;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .marquee-item:hover img { transform: scale(1.05); }
+    }
+    .gallery-actions {
+      margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0.75rem;
+      padding: 0 1.25rem; max-width: var(--max); margin-left: auto; margin-right: auto;
+    }
+    @media (min-width: 900px) { .gallery-actions { padding: 0 2.5rem; } }
+
+    .lightbox {
+      position: fixed; inset: 0; z-index: 12000;
+      display: none; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.86); backdrop-filter: blur(16px); padding: 1.25rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox[hidden] { display: none !important; }
+    .lightbox img {
+      max-width: min(960px, 100%); max-height: min(86vh, 900px);
+      object-fit: contain; border-radius: 18px; box-shadow: var(--shadow);
+    }
+    .lightbox-close {
+      position: absolute; top: 1rem; right: 1rem;
+      width: 44px; height: 44px; border-radius: 980px; border: 0;
+      background: var(--bg-alt); color: var(--text); font-size: 1.2rem;
+    }
+    .lightbox-caption {
+      position: absolute; left: 50%; bottom: 1.25rem; transform: translateX(-50%);
+      color: var(--text-muted); font-size: 0.85rem; max-width: 90%; text-align: center;
+    }
+
+    .videos { background: var(--bg-alt); }
+    .video-stage { display: grid; gap: 1rem; }
+    @media (min-width: 900px) { .video-stage { gap: 1.25rem; } }
+    .video-thumbs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; align-content: start; }
+    @media (min-width: 900px) { .video-thumbs { grid-template-columns: repeat(4, 1fr); } }
+    .video-thumb {
+      position: relative; border: 1px solid var(--line); border-radius: 16px;
+      overflow: hidden; background: #111; aspect-ratio: 9 / 16;
+    }
+    .video-thumb video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .video-thumb.is-playing video { object-fit: contain; }
+    .video-play {
+      position: absolute; inset: 0; z-index: 1; width: 100%; padding: 0; border: 0; cursor: pointer;
+      background: linear-gradient(transparent 45%, rgba(0,0,0,0.65));
+      display: flex; align-items: center; justify-content: center;
+    }
+    .video-play::before {
+      content: ""; width: 54px; height: 54px; border-radius: 50%;
+      background: rgba(255,255,255,0.9) no-repeat 56% 50% / 20px
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 2.5v15L17 10z' fill='%237a3a42'/%3E%3C/svg%3E");
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: transform 0.2s var(--ease);
+    }
+    .video-play:hover::before, .video-play:focus-visible::before { transform: scale(1.08); }
+    .video-play span {
+      position: absolute; left: 0.7rem; right: 0.7rem; bottom: 0.7rem;
+      font-size: 0.72rem; font-weight: 600; color: #fff; text-align: left;
+    }
+    .video-thumb.is-playing { box-shadow: 0 0 0 2px var(--liver); }
+    .video-thumb.is-playing .video-play { display: none; }
+    .video-actions { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+    .training { background: var(--bg); }
+    #curriculum { background: var(--bg-alt); }
+    .train-row { display: grid; gap: 1.5rem; align-items: center; margin-bottom: 4rem; }
+    .train-row:last-child { margin-bottom: 0; }
+    @media (min-width: 860px) {
+      .train-row { grid-template-columns: 1.15fr 0.85fr; gap: 3.25rem; }
+      .train-row.reverse { grid-template-columns: 0.85fr 1.15fr; }
+      .train-row.reverse .train-media { order: 2; }
+      .train-row.reverse .train-copy { order: 1; }
+    }
+    .train-media {
+      position: relative; overflow: hidden; border-radius: 24px;
+      aspect-ratio: 4/3; background: var(--bg-alt);
+    }
+    .train-media img {
+      width: 100%; height: 120%; object-fit: cover;
+      position: absolute; top: -10%; left: 0;
+    }
+    .train-copy h3 {
+      font-family: var(--font-display); font-size: 1.85rem; margin: 0 0 0.7rem;
+      letter-spacing: -0.03em; font-weight: 600;
+    }
+    .train-copy p { color: var(--text-muted); margin: 0 0 1.25rem; font-size: 1.05rem; }
+
+    .careers { background: var(--bg-alt); }
+    .quote {
+      position: relative;
+      border-radius: 24px;
+      padding: 2rem 1.75rem 1.75rem;
+      margin: 0 0 2rem;
+      background: #fff;
+    }
+    .quote::before {
+      content: "“";
+      position: absolute; top: -0.1em; left: 0.45rem;
+      font-family: var(--font-display); font-size: 6rem; line-height: 1;
+      color: var(--liver-wash); pointer-events: none;
+    }
+    .quote blockquote {
+      position: relative;
+      font-family: var(--font-display);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+      font-weight: 500; line-height: 1.3;
+      margin: 0 0 1rem; max-width: 30ch;
+      letter-spacing: -0.025em;
+    }
+    .quote cite {
+      font-style: normal; font-size: 0.82rem; color: var(--text-muted); font-weight: 500;
+    }
+    .hotel-grid { display: grid; gap: 0.7rem; }
+    @media (min-width: 640px) { .hotel-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 960px) { .hotel-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .hotel-item {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.85rem 1rem;
+      background: #fff; border-radius: 14px;
+      font-weight: 500; letter-spacing: -0.015em;
+    }
+    .hotel-logo { flex: 0 0 96px; width: 96px; height: 56px; object-fit: contain; }
+    .hotel-item small { display: block; color: var(--text-muted); font-size: 0.78rem; margin-top: 0.15rem; font-weight: 400; }
+    .hotel-note { color: var(--text-muted); }
+
+    .press {
+      padding-block: 2.5rem;
+      background: var(--bg);
+      border-block: 1px solid var(--line);
+    }
+    .press-inner {
+      max-width: var(--max); margin: 0 auto; padding: 0 1.25rem;
+      display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; align-items: baseline;
+      justify-content: space-between;
+    }
+    .press p { margin: 0; color: var(--text-muted); font-size: 0.95rem; max-width: 48ch; }
+    .press strong { color: var(--text); }
+
+    .register { background: var(--bg-alt); }
+    .form-layout { display: grid; gap: 2.25rem; }
+    @media (min-width: 860px) {
+      .form-layout { grid-template-columns: 1fr 1.15fr; gap: 3.25rem; align-items: start; }
+    }
+    .form-aside p { color: var(--text-muted); font-size: 1.05rem; }
+    .alt-contact { margin-top: 1.6rem; padding-top: 1.35rem; border-top: 1px solid var(--line); color: var(--text-muted); }
+    .alt-contact a { color: var(--liver); font-weight: 600; }
+    .intent-row { display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; margin-bottom: 0.35rem; }
+    .intent-row label { display: flex; align-items: center; gap: 0.45rem; font-size: 0.92rem; color: var(--text); }
+    .reg-form {
+      display: grid; gap: 1.1rem;
+      padding: 1.6rem;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+    .field { display: grid; gap: 0.4rem; }
+    .field label { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      background: var(--bg-alt);
+      border: 1px solid transparent;
+      color: var(--text);
+      padding: 0.9rem 1rem;
+      border-radius: 14px;
+    }
+    .field input::placeholder, .field textarea::placeholder { color: #a1a1a6; }
+    .field input:focus-visible,
+    .field select:focus-visible,
+    .field textarea:focus-visible {
+      outline: none; border-color: var(--liver);
+      box-shadow: 0 0 0 4px rgba(154, 77, 86, 0.14);
+      background: #fff;
+    }
+    .field textarea { min-height: 100px; resize: vertical; }
+    .req { color: var(--liver); font-weight: 700; }
+    .field.is-invalid input,
+    .field.is-invalid select { border-color: #b42318; box-shadow: 0 0 0 4px rgba(180, 35, 24, 0.12); }
+    .field-error { margin: 0; font-size: 0.82rem; color: #b42318; }
+    .field-error[hidden] { display: none; }
+    .form-errors {
+      padding: 0.85rem 1rem; border-radius: 14px;
+      background: #fdecec; color: #7a1f1a;
+    }
+    .form-errors[hidden] { display: none; }
+    .form-errors p { margin: 0 0 0.4rem; font-weight: 700; color: #7a1f1a; }
+    .form-errors ul { margin: 0; padding-left: 1.15rem; }
+    .form-errors a { color: #7a1f1a; text-decoration: underline; }
+    .form-row { display: grid; gap: 1rem; }
+    @media (min-width: 560px) { .form-row { grid-template-columns: 1fr 1fr; } }
+
+    .location { background: var(--bg); }
+    .location-grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 800px) {
+      .location-grid { grid-template-columns: 1.25fr 0.75fr; align-items: stretch; gap: 1.75rem; }
+    }
+    .map-frame {
+      min-height: 340px; border-radius: 22px; overflow: hidden; background: var(--bg-alt);
+    }
+    .map-frame iframe { width: 100%; height: 100%; min-height: 340px; border: 0; filter: none; }
+    .location-copy { padding: 0.25rem 0; }
+    .location-copy address { font-style: normal; color: var(--text-muted); margin: 0 0 1.25rem; line-height: 1.75; }
+
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 3.5rem 1.25rem 7.5rem;
+      background: var(--bg-alt);
+    }
+    .footer-inner { max-width: var(--max); margin: 0 auto; display: grid; gap: 2.25rem; }
+    @media (min-width: 800px) {
+      .footer-inner { grid-template-columns: 1.2fr 1fr 1fr; }
+      .footer { padding: 4rem 2.5rem 6.5rem; }
+    }
+    .footer-logo {
+      display: block; height: 72px; width: auto;
+      background: #fff; border-radius: 10px; padding: 0.2rem 0.3rem; margin: 0 0 0.9rem;
+    }
+    .footer h4 {
+      font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 0.75rem;
+      color: var(--text); font-weight: 600; letter-spacing: -0.02em;
+    }
+    .footer p, .footer a { color: var(--text-muted); font-size: 0.92rem; }
+    .footer a:hover { color: var(--liver); }
+    .footer-links { display: grid; gap: 0.5rem; }
+    .socials { display: flex; gap: 0.55rem; margin-top: 1.15rem; }
+    .socials a {
+      width: 40px; height: 40px; border: 1px solid var(--line);
+      border-radius: 980px; background: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 600;
+    }
+    .socials a:hover { color: var(--liver); border-color: var(--liver-soft); }
+    .copyright {
+      max-width: var(--max); margin: 2.25rem auto 0; padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.76rem; color: var(--text-muted);
+    }
+
+    .float-wa {
+      position: fixed;
+      right: max(0.85rem, env(safe-area-inset-right));
+      bottom: max(0.85rem, env(safe-area-inset-bottom));
+      z-index: 9999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--liver); color: #fff;
+      display: inline-flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+    .float-wa:hover { background: var(--liver-deep); }
+    .float-wa svg { width: 30px; height: 30px; display: block; flex-shrink: 0; }
+
+    .chat-fab {
+      position: fixed;
+      right: max(0.85rem, env(safe-area-inset-right));
+      left: auto;
+      bottom: calc(0.85rem + 64px + env(safe-area-inset-bottom, 0px));
+      z-index: 9999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #fff; color: var(--liver-deep); border: 1px solid var(--line);
+      display: inline-flex; align-items: center; justify-content: center;
+      box-shadow: var(--shadow);
+      font-size: 0.62rem; font-weight: 700;
+    }
+    .chat-panel {
+      position: fixed;
+      right: max(0.75rem, env(safe-area-inset-right));
+      left: auto;
+      bottom: calc(0.85rem + 128px + env(safe-area-inset-bottom, 0px));
+      z-index: 9999;
+      width: min(390px, calc(100vw - 1.5rem));
+      height: min(520px, calc(100vh - 11.5rem));
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      display: none; flex-direction: column;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+      overflow: hidden;
+    }
+    .chat-panel.open { display: flex; }
+    .chat-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.05rem; border-bottom: 1px solid var(--line);
+      background: var(--bg-alt);
+    }
+    .chat-header h2 { margin: 0; font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; }
+    .chat-header p { margin: 0.2rem 0 0; font-size: 0.72rem; color: var(--text-muted); }
+    .chat-close {
+      background: #fff; border: 1px solid var(--line); color: var(--text);
+      width: 36px; height: 36px; border-radius: 980px;
+    }
+    .chat-messages {
+      flex: 1; overflow-x: hidden; overflow-y: auto;
+      padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem;
+    }
+    .chat-bubble {
+      max-width: 100%; min-width: 0;
+      padding: 0.75rem 0.9rem; font-size: 0.9rem; line-height: 1.55;
+      border-radius: 16px; overflow-wrap: anywhere; word-break: break-word;
+    }
+    .chat-bubble a { color: var(--liver); text-decoration: underline; text-underline-offset: 2px; }
+    .chat-bubble.bot { align-self: flex-start; background: var(--bg-alt); }
+    .chat-bubble.user { align-self: flex-end; background: var(--liver-wash); color: var(--liver-deep); }
+    .chat-bubble.err { background: #fdecec; color: #7a1f1a; }
+    .chat-quick { display: flex; flex-wrap: wrap; gap: 0.4rem; padding: 0 1rem 0.85rem; }
+    .chat-quick button {
+      background: var(--bg-alt); border: 0; color: var(--text);
+      padding: 0.4rem 0.7rem; font-size: 0.72rem; border-radius: 980px; font-weight: 500;
+    }
+    .chat-quick button:hover { background: var(--liver-wash); color: var(--liver-deep); }
+    .chat-input-row {
+      display: flex; gap: 0.5rem; padding: 0.85rem; border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .chat-input-row input {
+      flex: 1; background: var(--bg-alt); border: 1px solid transparent; color: var(--text);
+      padding: 0.75rem 0.85rem; border-radius: 980px;
+    }
+    .chat-input-row input:focus-visible {
+      outline: none; border-color: var(--liver);
+      box-shadow: 0 0 0 3px rgba(154, 77, 86, 0.12);
+    }
+    .chat-input-row button {
+      background: var(--liver); color: #fff; border: 0; padding: 0 1.05rem;
+      font-weight: 600; font-size: 0.8rem; border-radius: 980px;
+    }
+    .chat-input-row button:disabled { opacity: 0.55; cursor: wait; }
+    .chat-typing { font-size: 0.78rem; color: var(--text-muted); padding: 0 0.2rem; }
+    .chat-wa-cta { margin-top: 0.5rem; display: inline-flex; max-width: 100%; }
+    @media (max-width: 640px) {
+      .float-wa, .chat-fab { width: 48px; height: 48px; }
+      .float-wa svg { width: 26px; height: 26px; }
+      .chat-fab { font-size: 0.52rem; bottom: calc(0.75rem + 56px + env(safe-area-inset-bottom, 0px)); }
+      .chat-panel { bottom: calc(0.75rem + 112px + env(safe-area-inset-bottom, 0px)); height: min(68vh, calc(100dvh - 9.5rem)); }
+      .footer { padding-bottom: max(7.25rem, calc(6rem + env(safe-area-inset-bottom))); }
+      .hero-stage { aspect-ratio: 4 / 3; border-radius: 20px; }
+    }
+    .badge {
+      display: inline-flex; align-items: center;
+      padding: 0.32rem 0.7rem; border-radius: 999px;
+      background: var(--liver-wash); color: var(--ink);
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .hero { padding-top: 2.5rem; }
+    .hero-pills {
+      display: flex; flex-wrap: wrap; gap: 0.45rem; justify-content: center;
+      margin-top: 1.35rem;
+    }
+    .hero-pills span {
+      background: #fff; border: 1px solid var(--line); color: var(--text);
+      padding: 0.42rem 0.7rem; border-radius: 999px; font-size: 0.78rem; font-weight: 600;
+    }
+    .why { background: var(--bg); }
+    .why-grid { display: grid; gap: 0.85rem; grid-template-columns: 1fr 1fr; }
+    .why-card {
+      background: #fff; border: 1px solid var(--line); border-radius: 18px;
+      padding: 1.1rem 1rem; min-height: 8.5rem;
+    }
+    .why-card.wide { grid-column: 1 / -1; background: var(--liver); color: #fff; }
+    .why-card.wide p { color: rgba(255,255,255,0.82); }
+    .why-card h3 { margin: 0 0 0.35rem; font-size: 1.05rem; letter-spacing: -0.02em; }
+    .why-card p { margin: 0; color: var(--text-muted); font-size: 0.88rem; }
+    @media (min-width: 768px) {
+      .why-grid { grid-template-columns: 1.2fr 1fr 1fr; }
+      .why-card.wide { grid-column: auto; }
+      .why-card.span2 { grid-column: span 2; }
+    }
+    .course-cat { margin: 2.25rem 0 0; }
+    .course-cat h3 { margin: 0 0 0.85rem; font-size: 1.15rem; letter-spacing: -0.02em; color: var(--ink); }
+    .course-rail {
+      display: flex; gap: 0.85rem; overflow-x: auto; padding-bottom: 0.6rem;
+      scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+    }
+    .course-tile {
+      flex: 0 0 min(78vw, 260px); scroll-snap-align: start;
+      background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    .course-tile img { width: 100%; height: 140px; object-fit: cover; }
+    .course-tile .pad { padding: 0.95rem 1rem 1.05rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+    .course-tile small { color: var(--liver); font-weight: 700; font-size: 0.7rem; letter-spacing: 0.04em; text-transform: uppercase; }
+    .course-tile h4 { margin: 0; font-size: 1.05rem; letter-spacing: -0.02em; }
+    .course-tile p { margin: 0 0 0.55rem; color: var(--text-muted); font-size: 0.86rem; flex: 1; }
+    @media (min-width: 900px) {
+      .course-rail { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; }
+      .course-tile { flex: none; }
+    }
+    .trial { background: var(--liver); color: #fff; }
+    .trial .section-title, .trial .section-lead { color: #fff; }
+    .trial .section-lead { opacity: 0.88; }
+    .trial .btn-gold {
+      background: #fff;
+      color: var(--ink);
+      border-color: #fff;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    }
+    .trial .btn-gold:hover {
+      background: var(--bg-alt);
+      color: var(--ink);
+      border-color: var(--bg-alt);
+    }
+    .certs { background: var(--bg-alt); }
+    .cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+    @media (min-width: 768px) { .cert-grid { grid-template-columns: repeat(4, 1fr); } }
+    .cert-card {
+      background: #fff; border: 1px dashed rgba(139,38,53,0.28); border-radius: 16px;
+      padding: 1.2rem 0.9rem; min-height: 120px; text-align: center;
+    }
+    .cert-card b { display: block; color: var(--liver); font-size: 1.2rem; margin-bottom: 0.3rem; }
+    .cert-card span { color: var(--text); font-size: 0.86rem; font-weight: 600; }
+    .cert-card--bonus { background: var(--liver-wash); border-style: solid; }
+    .hotel-item .tag {
+      display: inline-block; margin-top: 0.35rem;
+      background: var(--liver-wash); color: var(--ink);
+      font-size: 0.68rem; font-weight: 700; padding: 0.18rem 0.45rem; border-radius: 999px;
+    }
+    .paths { background: var(--bg); }
+    .path-grid { display: grid; gap: 1rem; }
+    @media (min-width: 720px) { .path-grid { grid-template-columns: 1.15fr 0.85fr; } }
+    .path-card {
+      border-radius: 22px; overflow: hidden; min-height: 220px; position: relative;
+      display: flex; align-items: flex-end; padding: 1.35rem; color: #fff;
+      background: #3a2428 center/cover no-repeat;
+    }
+    .path-card::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 20%, rgba(36,18,22,0.78));
+    }
+    .path-card > * { position: relative; z-index: 1; }
+    .path-card h3 { margin: 0 0 0.35rem; font-size: 1.45rem; }
+    .path-card p { margin: 0 0 0.85rem; opacity: 0.9; font-size: 0.92rem; }
+    .biz { background: var(--bg-alt); }
+    .biz-box {
+      background: #fff; border-radius: 22px; padding: 1.4rem;
+      display: grid; gap: 1rem;
+    }
+    @media (min-width: 800px) { .biz-box { grid-template-columns: 1.1fr 0.9fr; align-items: center; } }
+    .biz-box ul { margin: 0; padding-left: 1.1rem; color: var(--text-muted); }
+    .biz-media { border-radius: 18px; overflow: hidden; min-height: 240px; }
+    .biz-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .faq { background: var(--bg); }
+    .faq-list { display: grid; gap: 0.55rem; }
+    .faq-list details {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.85rem 1rem;
+    }
+    .faq-list summary { cursor: pointer; font-weight: 650; letter-spacing: -0.015em; }
+    .faq-list p { margin: 0.65rem 0 0; color: var(--text-muted); }
+    .final { background: var(--ink); color: #fff; text-align: center; }
+    .final .section-title { color: #fff; }
+    .final .section-lead { color: rgba(255,255,255,0.82); margin-left: auto; margin-right: auto; }
+    .final .btn-gold { background: #fff; color: var(--ink); }
+    .final .btn-outline { background: transparent; color: #fff; border-color: rgba(255,255,255,0.28); }
+    .form-success { padding: 1rem; border-radius: 14px; background: var(--liver-wash); color: var(--ink); }
+    .form-success[hidden] { display: none; }
+
+  </style>
+</head>
+<body>
+  <!-- THESIS: PPKS as an Apple product page — white field, one 浅猪肝红 accent, training shown as the product. Refuses dark luxury-kitchen gold. OWN-WORLD: #fff / #f5f5f7, SF-like system type, 浅猪肝红 #9a4d56, frosted nav, rounded photo stage. STORY: 2-year chef training, then register. FIRST VIEWPORT: centered headline, two CTAs, large rounded kitchen photo. FORM: user-pinned Apple light + 浅猪肝红. FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance. -->
+  <a class="skip-link" href="#main" data-i18n="aria.skip">Skip to content</a>
+  <header class="nav" id="top">
+    <a class="nav-logo" href="index.html#top" data-i18n-aria="aria.home" aria-label="PPKS Baking & Cooking Academy home">
+      <img src="assets/ppks-logo.jpg" alt="PPKS — Sabah Skills Development Centre" width="760" height="375" />
+      <span data-i18n="logo.sub">Baking &amp; Cooking Academy</span>
+    </a>
+    <nav data-i18n-aria="aria.nav" aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+        <li><a href="#why" data-i18n="nav.why">Why PPKS</a></li>
+        <li><a href="#careers" data-i18n="nav.careers">Practical</a></li>
+        <li><a href="#gallery" data-i18n="nav.life">Student Life</a></li>
+        <li><a href="#location" data-i18n="nav.location">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-tools">
+        <div class="track-toggle" data-i18n-aria="aria.track" aria-label="Landing">
+          <a class="is-on" href="index.html" data-i18n="nav.kitchen">Kitchen</a>
+          <a href="facial.html" data-i18n="nav.facial">Facial</a>
+        </div>
+        <div class="lang-toggle" role="group" data-i18n-aria="aria.lang" aria-label="Language">
+          <button type="button" data-lang="en" class="is-on">EN</button>
+          <button type="button" data-lang="zh">中文</button>
+          <button type="button" data-lang="ms">BM</button>
+        </div>
+      </div>
+      <a class="btn btn-gold btn-pill btn-sm magnetic" href="#register" data-i18n="cta.register">Register</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMobile" data-i18n-aria="aria.openMenu" aria-label="Open menu">
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#courses" data-i18n="nav.courses">Courses</a>
+      <a href="#why" data-i18n="nav.why">Why PPKS</a>
+      <a href="#careers" data-i18n="nav.careers">Practical</a>
+      <a href="#gallery" data-i18n="nav.life">Student Life</a>
+      <a href="#register" data-i18n="nav.register">Register</a>
+      <a href="#location" data-i18n="nav.location">Contact</a>
+      <a href="facial.html" data-i18n="nav.facial">Facial</a>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="hero" data-i18n-aria="aria.hero" aria-label="Hero">
+      <div class="hero-content">
+        <p class="badge" data-i18n="hero.badge">PPKS Baking &amp; Cooking Academy</p>
+        <h1 data-i18n="hero.h1">Turn your passion for baking &amp; cooking into a career</h1>
+        <p class="hero-sub" data-i18n="hero.sub">Professional culinary and baking training in Penampang, Sabah. 2-year pathway, 9 certificates, hotel practical, and allowance of RM1,500 / month or above. No SPM required.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-gold magnetic" href="#register" data-i18n="cta.registerNow">Register Now</a>
+          <a class="btn btn-outline magnetic" href="#courses" data-i18n="cta.courses">Explore Courses</a>
+        </div>
+        <div class="hero-pills">
+          <span data-i18n="pill.years">2-Year Programme</span>
+          <span data-i18n="pill.certs">9 Certificates</span>
+          <span data-i18n="pill.practical">Practical Training</span>
+          <span data-i18n="pill.allow">Allowance RM1,500+/month</span>
+          <span data-i18n="pill.spm">No SPM Required</span>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-training.png">
+          <source src="assets/videos/clip-01.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="why.title">Why students choose PPKS</h2>
+        <p class="section-lead reveal" data-i18n="why.lead">A Sabah academy built for careers — not a brochure full of guarantees we cannot make.</p>
+        <div class="why-grid reveal">
+          <article class="why-card wide">
+            <h3 data-i18n="why.certs">9 certificates per course</h3>
+            <p data-i18n="why.certsp">SKM Levels 1–3, centre professional diplomas, a diploma, an advanced diploma, and a hotel practical certificate.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.years">2-year programme</h3>
+            <p data-i18n="why.yearsp">1 year at the training centre + 1 year hotel practical at a 5-star hotel.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.spm">No SPM required</h3>
+            <p data-i18n="why.spmp">Beginners and career-switchers are welcome. Age is not limited.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.chefs">Experienced instructors</h3>
+            <p data-i18n="why.chefsp">Chef is a Halal Certificate Holder.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.hotels">Workplace practical</h3>
+            <p data-i18n="why.hotelsp">Partner hotels. Practical allowance RM1,500 / month or above.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.pay">Tuition installment</h3>
+            <p data-i18n="why.payp">Interest-free instalment plans are available.</p>
+          </article>
+          <article class="why-card">
+            <h3 data-i18n="why.sch">Financial aid application help</h3>
+            <p data-i18n="why.schp">For eligible students.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" id="courses">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="courses.title">What you can study</h2>
+        <p class="section-lead reveal" data-i18n="courses.lead">Pick a path — or choose “Not sure yet” on the form and Chef Ang will recommend one.</p>
+
+        <div class="course-cat reveal">
+          <h3 data-i18n="cat.pro">Professional programmes</h3>
+          <div class="course-rail">
+            <article class="course-tile">
+              <img src="assets/hero-training.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small data-i18n="cat.flag">Flagship</small>
+                <h4 data-i18n="courses.a.h">2-Year Chef Course</h4>
+                <p data-i18n="courses.a.meta">1 year training centre + 1 year 5-star hotel practical. 9 certificates.</p>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="2-Year Chef Course" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-grating.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small>SKM</small>
+                <h4 data-i18n="tile.skm1">SKM Level 1</h4>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="SKM" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-pouring.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small>SKM</small>
+                <h4 data-i18n="tile.skm2">SKM Level 2</h4>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="SKM" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-mixer-blue.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small>SKM</small>
+                <h4 data-i18n="tile.skm3">SKM Level 3</h4>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="SKM" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-mixer-blue.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small>Diploma</small>
+                <h4 data-i18n="tile.dipc">Diploma in Culinary Arts</h4>
+                <p data-i18n="tile.dipcp">Warnborough College UK pathway. Tuition: ask Chef Ang.</p>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Culinary Arts" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-pouring.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small>Diploma</small>
+                <h4 data-i18n="tile.dipp">Diploma in Patisserie</h4>
+                <p data-i18n="tile.dippp">Pastry pathway. Promo seats: first 5 registrations, 50% off SKM / diploma.</p>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Patisserie" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="course-cat reveal">
+          <h3 data-i18n="cat.biz">Business &amp; career</h3>
+          <div class="course-rail">
+            <article class="course-tile">
+              <img src="assets/training-grating.png" alt="" loading="lazy" />
+              <div class="pad">
+                <small data-i18n="cat.shop">Start a shop</small>
+                <h4 data-i18n="courses.c.h">Bakery Business Course</h4>
+                <p data-i18n="tile.bizp">Setup, location, suppliers, machines, costing — not only kitchen skills.</p>
+                <a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Bakery Business Course" data-i18n="cta.learn">Learn more</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="course-cat reveal">
+          <h3 data-i18n="cat.life">Short courses</h3>
+          <div class="course-rail">
+            <article class="course-tile">
+              <img src="assets/training-grating.png" alt="" loading="lazy" />
+              <div class="pad"><small>Hobby</small><h4 data-i18n="tile.hobby">Hobby Class</h4><p data-i18n="tile.hobbyp">Bake for home and weekends.</p><a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Hobby Class" data-i18n="cta.learn">Learn more</a></div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-pouring.png" alt="" loading="lazy" />
+              <div class="pad"><small>Kids</small><h4 data-i18n="tile.kids">Children Class (Age 6–15)</h4><p data-i18n="tile.kidsp">For ages 6 to 15.</p><a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Children Class" data-i18n="cta.learn">Learn more</a></div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/training-mixer-blue.png" alt="" loading="lazy" />
+              <div class="pad"><small>Parent &amp; child</small><h4 data-i18n="tile.fam">Parent &amp; Child Class</h4><p data-i18n="tile.famp">Parents learn together with their children.</p><a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Parent & Child Class" data-i18n="cta.learn">Learn more</a></div>
+            </article>
+            <article class="course-tile">
+              <img src="assets/hero-training.png" alt="" loading="lazy" />
+              <div class="pad"><small>Private</small><h4 data-i18n="tile.priv">Private one-to-one</h4><p data-i18n="tile.privp">Specialist session with the chef.</p><a class="btn btn-gold btn-sm" href="#register" data-prefill-course="Private Class" data-i18n="cta.learn">Learn more</a></div>
+            </article>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="trial" id="trial">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="trial.title">Free 1-week trial</h2>
+        <p class="section-lead reveal" data-i18n="trial.lead">Try one week before you decide. Fill in the form and we will contact you.</p>
+        <a class="btn btn-gold magnetic" href="#register" data-intent="trial" data-i18n="trial.cta">Book my free trial</a>
+      </div>
+    </section>
+
+    <section class="certs" id="certs">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="certs.title">One course, 9 certificates</h2>
+        <div class="cert-grid reveal">
+          <div class="cert-card"><b>01</b><span data-i18n="cert.1">SKM Level 1</span></div>
+          <div class="cert-card"><b>02</b><span data-i18n="cert.2">SKM Level 2</span></div>
+          <div class="cert-card"><b>03</b><span data-i18n="cert.3">SKM Level 3</span></div>
+          <div class="cert-card"><b>04</b><span data-i18n="cert.4">Centre Professional Diploma Level 1</span></div>
+          <div class="cert-card"><b>05</b><span data-i18n="cert.5">Centre Professional Diploma Level 2</span></div>
+          <div class="cert-card"><b>06</b><span data-i18n="cert.6">Centre Professional Diploma Level 3</span></div>
+          <div class="cert-card"><b>07</b><span data-i18n="cert.7">Diploma in Patisserie / Culinary Arts</span></div>
+          <div class="cert-card"><b>08</b><span data-i18n="cert.8">Advanced Diploma</span></div>
+          <div class="cert-card"><b>09</b><span data-i18n="cert.9">Hotel Practical Certificate</span></div>
+          <div class="cert-card cert-card--bonus"><b>+</b><span data-i18n="certs.note">Bonus: Annual Best Performance Certificate</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="training" id="curriculum">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="mod.eyebrow">Course modules</p>
+        <h2 class="section-title reveal" data-i18n="mod.title">What you study</h2>
+        <div class="rule reveal"></div>
+        <p class="section-lead reveal" data-i18n="mod.lead">Nine core modules.</p>
+        <ol class="curriculum-list reveal">
+          <li><b>01</b><span data-i18n-html="mod.1">Ingredient knowledge and function<br /><small>配料的认识和作用</small></span></li>
+          <li><b>02</b><span data-i18n-html="mod.2">Mixing and processing techniques<br /><small>搅拌和制作过程</small></span></li>
+          <li><b>03</b><span data-i18n-html="mod.3">Storage of ingredients<br /><small>原料的储存</small></span></li>
+          <li><b>04</b><span data-i18n-html="mod.4">Baking skill and product finishing<br /><small>烘焙技巧及成品研讨</small></span></li>
+          <li><b>05</b><span data-i18n-html="mod.5">Personal hygiene check list<br /><small>个人卫生条例</small></span></li>
+          <li><b>06</b><span data-i18n-html="mod.6">Food handling principles<br /><small>食物处理原则</small></span></li>
+          <li><b>07</b><span data-i18n-html="mod.7">Costing<br /><small>成本计算</small></span></li>
+          <li><b>08</b><span data-i18n-html="mod.8">Safety at work<br /><small>厨房安全</small></span></li>
+          <li><b>09</b><span data-i18n-html="mod.9">Bakery Management<br /><small>管理学</small></span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="gal.eyebrow">What you’ll learn</p>
+        <h2 class="section-title reveal" data-i18n="gal.title">Life at PPKS</h2>
+        <div class="rule reveal"></div>
+        <p class="section-lead reveal" data-i18n="gal.lead">Real student kitchens and finished work.</p>
+      </div>
+
+      <div class="marquee reveal" data-i18n-aria="aria.gallery" aria-label="Photo gallery">
+        <div class="marquee-row marquee-row--left">
+          <div class="marquee-track">
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.chef" data-caption="Chef-led pastry technique" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="Chef instructor guiding students with a KitchenAid mixer" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.station" data-caption="Small-class station work" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="Students measuring and pouring ingredients" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.collab" data-caption="Collaborative baking" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="Students collaborating around a prep table" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.citrus" data-caption="Precision citrus prep" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="Students grating lemon zest in class" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.dishes" data-caption="Course dishes &amp; plating" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="Students preparing ingredients in class" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.kitchen" data-caption="Kitchen &amp; food gallery" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="Students working in the PPKS kitchen" loading="lazy" /></button>
+            <!-- duplicate for seamless loop -->
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.chef" data-caption="Chef-led pastry technique" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.station" data-caption="Small-class station work" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.collab" data-caption="Collaborative baking" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.citrus" data-caption="Precision citrus prep" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.dishes" data-caption="Course dishes &amp; plating" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.kitchen" data-caption="Kitchen &amp; food gallery" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+        <div class="marquee-row marquee-row--right">
+          <div class="marquee-track">
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.zest" data-caption="Hands-on lemon zesting" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="Culinary students zesting lemon" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.uk" data-caption="Warnborough UK pathway" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="Chef guiding a pastry class" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.rhythm" data-caption="Real kitchen rhythm" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="Students at stainless steel station" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.super" data-caption="Instructor supervision" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="Instructor and students at the bench" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.skm" data-caption="SKM &amp; culinary craft" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="Students collaborating on a recipe" loading="lazy" /></button>
+            <button type="button" class="marquee-item" data-i18n-caption="gal.cap.team" data-caption="Team prep practice" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="Students practicing baking prep together" loading="lazy" /></button>
+            <!-- duplicate -->
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.zest" data-caption="Hands-on lemon zesting" data-full="assets/training-grating.png"><img src="assets/training-grating.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.uk" data-caption="Warnborough UK pathway" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.rhythm" data-caption="Real kitchen rhythm" data-full="assets/training-pouring.png"><img src="assets/training-pouring.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.super" data-caption="Instructor supervision" data-full="assets/hero-training.png"><img src="assets/hero-training.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.skm" data-caption="SKM &amp; culinary craft" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="" loading="lazy" /></button>
+            <button type="button" class="marquee-item" aria-hidden="true" tabindex="-1" data-i18n-caption="gal.cap.team" data-caption="Team prep practice" data-full="assets/training-mixer-blue.png"><img src="assets/training-mixer-blue.png" alt="" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-actions reveal">
+        <a class="btn btn-outline magnetic" href="#videos" data-i18n="gal.videos">Watch kitchen videos</a>
+        <a class="btn btn-outline magnetic" href="https://www.tiktok.com/@ppks.official" target="_blank" rel="noopener noreferrer" data-i18n="gal.tiktok">More on TikTok @ppks.official</a>
+        <a class="btn btn-outline magnetic" href="https://www.facebook.com/search/top?q=Pusat%20Pembangunan%20Kemahiran%20Sabah" target="_blank" rel="noopener noreferrer" data-i18n="gal.facebook">Facebook</a>
+        <a class="btn btn-outline magnetic" data-todo="instagram-url" data-i18n="gal.instagram">Instagram</a>
+      </div>
+    </section>
+
+    <section class="videos" id="videos">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="vid.eyebrow">Kitchen clips</p>
+        <h2 class="section-title reveal" data-i18n="vid.title">See the training in motion</h2>
+        <div class="rule reveal"></div>
+        <p class="section-lead reveal" data-i18n="vid.lead">Short clips from real PPKS kitchens. The 9 modules, hotel practical, 1-week trial, and 2-year / 9-certificate story.</p>
+
+        <div class="video-stage reveal">
+          <div class="video-thumbs" id="videoThumbs" role="list">
+            <div class="video-thumb" role="listitem">
+              <video playsinline preload="metadata" src="assets/videos/clip-01.mp4#t=0.1"></video>
+              <button type="button" class="video-play" data-i18n-aria="aria.clip1" aria-label="Play clip 1">
+                <span data-i18n="vid.clip1">Clip 1</span>
+              </button>
+            </div>
+            <div class="video-thumb" role="listitem">
+              <video playsinline preload="metadata" src="assets/videos/clip-02.mp4#t=0.1"></video>
+              <button type="button" class="video-play" data-i18n-aria="aria.clip2" aria-label="Play clip 2">
+                <span data-i18n="vid.clip2">Clip 2</span>
+              </button>
+            </div>
+            <div class="video-thumb" role="listitem">
+              <video playsinline preload="metadata" src="assets/videos/clip-03.mp4#t=0.1"></video>
+              <button type="button" class="video-play" data-i18n-aria="aria.clip3" aria-label="Play clip 3">
+                <span data-i18n="vid.clip3">Clip 3</span>
+              </button>
+            </div>
+            <div class="video-thumb" role="listitem">
+              <video playsinline preload="metadata" src="assets/videos/clip-04.mp4#t=0.1"></video>
+              <button type="button" class="video-play" data-i18n-aria="aria.clip4" aria-label="Play clip 4">
+                <span data-i18n="vid.clip4">Clip 4</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-actions reveal">
+          <a class="btn btn-outline magnetic" href="https://www.tiktok.com/@ppks.official" target="_blank" rel="noopener noreferrer" data-i18n="vid.tiktok">TikTok @ppks.official</a>
+          <a class="btn btn-outline magnetic" href="#register" data-i18n="cta.xhs">Xiaohongshu / 小红书</a>
+          <a class="btn btn-outline magnetic" href="https://www.facebook.com/search/top?q=Pusat%20Pembangunan%20Kemahiran%20Sabah" target="_blank" rel="noopener noreferrer" data-i18n="vid.facebook">Facebook</a>
+          <a class="btn btn-outline magnetic" data-todo="instagram-url" data-i18n="vid.instagram">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="training" id="training">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="train.eyebrow">Inside the kitchen</p>
+        <h2 class="section-title reveal" data-i18n="train.title">Small class. Real supervision.</h2>
+        <div class="rule reveal"></div>
+        <p class="section-lead reveal" data-i18n="train.lead">Professional equipment, chef instructors, and focused station work — not a lecture hall.</p>
+
+        <div class="train-row">
+          <div class="train-media reveal">
+            <img src="assets/hero-training.png" alt="Instructor in black chef whites guiding a student grating lemon near a KitchenAid mixer" data-parallax-img="0.2" />
+          </div>
+          <div class="train-copy reveal">
+            <h3 data-i18n="train.1h">Guided technique, every session</h3>
+            <p data-i18n="train.1p">Chefs work side-by-side with students on the bench — zesting, mixing, plating — so habits form the right way from day one.</p>
+            <a class="btn btn-outline btn-sm magnetic" href="#register" data-i18n="cta.register">Register</a>
+          </div>
+        </div>
+
+        <div class="train-row reverse">
+          <div class="train-media reveal">
+            <img src="assets/training-pouring.png" alt="Students in PPKS uniforms collaborating on a recipe with stand mixer and prep bowls" data-parallax-img="0.2" />
+          </div>
+          <div class="train-copy reveal">
+            <h3 data-i18n="train.2h">Train on real kitchen equipment</h3>
+            <p data-i18n="train.2p">Stand mixers, scales, commercial prep tables — the same rhythm you’ll meet in hotel kitchens during practical placement.</p>
+            <a class="btn btn-outline btn-sm magnetic" href="#register" data-i18n="cta.register">Register</a>
+          </div>
+        </div>
+
+        <div class="train-row">
+          <div class="train-media reveal">
+            <img src="assets/training-mixer-blue.png" alt="Group of PPKS culinary students practicing citrus prep around a shared workstation" data-parallax-img="0.2" />
+          </div>
+          <div class="train-copy reveal">
+            <h3 data-i18n="train.3h">Halal Certificate Holder chef</h3>
+            <p data-i18n="train.3p">Our chef holds a Halal Certificate. Instruction in Bahasa Malaysia and English. Uniforms and hotel-kitchen standards.</p>
+            <a class="btn btn-outline btn-sm magnetic" href="#register" data-i18n="cta.register">Register</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers" id="careers">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="hotels.eyebrow">Hotel practical</p>
+        <h2 class="section-title reveal" data-i18n="hotels.title">Workplace practical training</h2>
+        <div class="rule reveal"></div>
+        <div class="quote reveal">
+          <blockquote data-i18n="hotels.quote">We normally take practical students as permanent employees after their practical training with us.</blockquote>
+          <cite>Le Méridien Kota Kinabalu — HR</cite>
+        </div>
+        <p class="section-lead reveal" data-i18n="hotels.lead">Practical allowance is RM1,500 per month or above.</p>
+        <div class="hotel-grid reveal">
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/hilton.svg" alt="" loading="lazy" /><span>Hilton Kota Kinabalu</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/grandis.png" alt="" loading="lazy" /><span>Grandis Hotels and Resorts<small data-i18n="hotels.mou">Partnership / MOU</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/sutera-harbour.png" alt="" loading="lazy" /><span>Sutera Harbour Resort<small>Kota Kinabalu, Sabah</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/horizon.png" alt="" loading="lazy" /><span>Horizon Hotel<small>豪丽胜酒店</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/le-meridien.svg" alt="" loading="lazy" /><span>Le Méridien Kota Kinabalu</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/shangri-la.svg" alt="" loading="lazy" /><span>Shangri-La's Tanjung Aru Resort &amp; Spa<small>Kota Kinabalu</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/ming-garden.png" alt="" loading="lazy" /><span>Ming Garden Hotel &amp; Residences</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/dorsett.svg" alt="" loading="lazy" /><span>Dorsett Grand Labuan</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/promenade.png" alt="" loading="lazy" /><span>Promenade Hotel Kota Kinabalu<small>亚庇凯城酒店</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/shangri-la.svg" alt="" loading="lazy" /><span>Shangri-La's Rasa Ria Resort<small>Kota Kinabalu</small></span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/beringgis.png" alt="" loading="lazy" /><span>Beringgis Beach Resort &amp; Spa</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/palace.png" alt="" loading="lazy" /><span>The Palace Hotel Kota Kinabalu</span></div>
+          <div class="hotel-item"><img class="hotel-logo" src="assets/hotels/genting.png" alt="" loading="lazy" /><span>Genting Malaysia</span></div>
+        </div>
+        <div style="margin-top:1.75rem" class="reveal">
+          <a class="btn btn-gold magnetic" href="#register" data-i18n="cta.register">Register</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="biz" id="business">
+      <div class="section-inner">
+        <div class="biz-box reveal">
+          <div>
+            <h2 class="section-title" data-i18n="biz.title">Want to start your own bakery?</h2>
+            <p class="section-lead" data-i18n="biz.lead">One-stop consulting and resources for bakery owners.</p>
+            <ul>
+              <li data-i18n="biz.1">Site selection consulting</li>
+              <li data-i18n="biz.2">Renovation and fit-out</li>
+              <li data-i18n="biz.3">Funding and financing introduction</li>
+              <li data-i18n="biz.4">Technical consulting</li>
+              <li data-i18n="biz.5">Direct contact with equipment supplier factories</li>
+              <li data-i18n="biz.6">Factory supply of materials</li>
+              <li data-i18n="biz.7">Staff training</li>
+              <li data-i18n="biz.8">And more — just ask</li>
+            </ul>
+            <div style="margin-top:1.25rem">
+              <a class="btn btn-gold" href="#register" data-prefill-course="Bakery Business Course" data-i18n="cta.registerNow">Register Now</a>
+            </div>
+          </div>
+          <div class="biz-media">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&q=80" alt="Chef and team working in a bakery kitchen" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paths" id="paths">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="path.title">What would you like to learn?</h2>
+        <div class="path-grid reveal">
+          <a class="path-card" href="#courses" style="background-image:url('assets/hero-training.png')">
+            <div>
+              <h3 data-i18n="path.cook">Baking &amp; Cooking</h3>
+              <p data-i18n="path.cookp">The main academy. Courses are open now.</p>
+              <span class="btn btn-gold btn-sm" data-i18n="cta.courses">Explore Courses</span>
+            </div>
+          </a>
+          <a class="path-card soon" href="facial.html" style="background-image:url('assets/training-grating.png')">
+            <div>
+              <h3 data-i18n="path.beauty">Beauty &amp; Facial</h3>
+              <p data-i18n="path.beautyp">Coming soon. Join the waitlist — not open yet.</p>
+              <span class="btn btn-outline btn-sm" data-i18n="path.wait">Join waitlist</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="faq.title">Frequently asked questions</h2>
+        <div class="faq-list reveal">
+          <details open><summary data-i18n="faq.q1">Do I need SPM?</summary><p data-i18n="faq.a1">No. Beginners can join.</p></details>
+          <details><summary data-i18n="faq.q2">How long is the flagship programme?</summary><p data-i18n="faq.a2">2 years: 1 year at the training centre + 1 year hotel practical at a 5-star hotel.</p></details>
+          <details><summary data-i18n="faq.q3">How many certificates can I receive?</summary><p data-i18n="faq.a3">9 per course: SKM Levels 1–3, centre professional diplomas, a diploma, an advanced diploma, and a hotel practical certificate.</p></details>
+          <details><summary data-i18n="faq.q4">Is practical training provided?</summary><p data-i18n="faq.a4">Yes — placements are not limited to Sabah; other places are possible too.</p></details>
+          <details><summary data-i18n="faq.q5">How much is the allowance?</summary><p data-i18n="faq.a5">RM1,500 per month or above.</p></details>
+          <details><summary data-i18n="faq.q6">Can I pay by instalment?</summary><p data-i18n="faq.a6">Interest-free instalment plans are available.</p></details>
+          <details><summary data-i18n="faq.q7">Can I apply for financial aid?</summary><p data-i18n="faq.a7">We can help eligible students apply.</p></details>
+          <details><summary data-i18n="faq.q8">Do you have children’s, hobby, or private classes?</summary><p data-i18n="faq.a8">Yes. Choose them on the form and we will arrange dates.</p></details>
+          <details><summary data-i18n="faq.q9">How do I register?</summary><p data-i18n="faq.a9">Fill the form. WhatsApp opens to Chef Ang with your details. Or tap WhatsApp.</p></details>
+          <details><summary data-i18n="faq.q10">Can I find a job after graduation?</summary><p data-i18n="faq.a10">We help with job placement, and partner hotels often take practical students on as permanent staff.</p></details>
+          <details><summary data-i18n="faq.q11">Do you provide accommodation for outstation students?</summary><p data-i18n="faq.a11">Yes, accommodation is available for outstation students. Ask Chef Ang for details.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <div class="press" role="region" data-i18n-aria="aria.press" aria-label="Credibility">
+      <div class="press-inner">
+        <p><strong data-i18n="press.est">Established 30 March 1999</strong> <span data-i18n="press.p1">Pusat Pembangunan Kemahiran Sabah. Baking and cooking now. Facial beauty coming soon, not yet open.</span></p>
+        <p data-i18n="press.p2">JPK = Jabatan Pembangunan Kemahiran (技能发展局). Warnborough College UK Centre Approval. Chef is a Halal Certificate Holder.</p>
+      </div>
+    </div>
+
+    <section class="register" id="register">
+      <div class="section-inner">
+        <div class="form-layout">
+          <div class="form-aside reveal">
+            <p class="eyebrow" data-i18n="reg.eyebrow">Online registration</p>
+            <h2 class="section-title" data-i18n="reg.title">Register or try 1 free week</h2>
+            <div class="rule"></div>
+            <p data-i18n="reg.p">Submit the form and WhatsApp opens to Chef Ang with your details. For the free trial week, Chef Ang will contact you to arrange class.</p>
+          </div>
+
+          <form class="reg-form reveal" id="regForm" novalidate>
+            <div class="form-errors" id="formErrors" role="alert" tabindex="-1" hidden>
+              <p data-i18n="reg.errTitle">Please fix the following:</p>
+              <ul id="formErrorList"></ul>
+            </div>
+            <div class="intent-row">
+              <label><input type="radio" name="intent" value="register" checked /> <span data-i18n="reg.reg">Online registration</span></label>
+              <label><input type="radio" name="intent" value="trial" /> <span data-i18n="reg.trial">1-week free trial class</span></label>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="name"><span data-i18n="reg.name">Name</span> <span class="req" aria-hidden="true">*</span><span class="sr-only" data-i18n="reg.required"> (required)</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="nameErr" data-i18n-placeholder="reg.ph.name" placeholder="Your full name" />
+                <p class="field-error" id="nameErr" hidden data-i18n="reg.err.name">Enter your name.</p>
+              </div>
+              <div class="field">
+                <label for="phone"><span data-i18n="reg.phone">WhatsApp number</span> <span class="req" aria-hidden="true">*</span><span class="sr-only" data-i18n="reg.required"> (required)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required aria-required="true" aria-describedby="phoneErr" data-i18n-placeholder="reg.ph.phone" placeholder="e.g. 017-xxx xxxx" />
+                <p class="field-error" id="phoneErr" hidden data-i18n="reg.err.phone">Enter a WhatsApp number.</p>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="course"><span data-i18n="reg.course">Course interest</span> <span class="req" aria-hidden="true">*</span><span class="sr-only" data-i18n="reg.required"> (required)</span></label>
+                <select id="course" name="course" required aria-required="true" aria-describedby="courseErr">
+                  <option value="" data-i18n="reg.select">Select a course</option>
+                  <option value="Not sure yet" data-i18n="reg.opt.e">Not sure yet</option>
+                  <option value="Culinary Arts" data-i18n="reg.opt.cul">Culinary Arts</option>
+                  <option value="Patisserie" data-i18n="reg.opt.pat">Patisserie</option>
+                  <option value="SKM" data-i18n="reg.opt.b">SKM</option>
+                  <option value="2-Year Chef Course" data-i18n="reg.opt.a">2-Year Chef Course</option>
+                  <option value="Bakery Business Course" data-i18n="reg.opt.c">Bakery Business Course</option>
+                  <option value="Hobby Class" data-i18n="reg.opt.hob">Hobby Class</option>
+                  <option value="Children Class" data-i18n="reg.opt.kid">Children Class</option>
+                  <option value="Parent & Child Class" data-i18n="reg.opt.fam">Parent &amp; Child Class</option>
+                  <option value="Private Class" data-i18n="reg.opt.priv">Private Class</option>
+                  <option value="Facial course enquiry" data-i18n="reg.opt.d">Beauty / Facial</option>
+                </select>
+                <p class="field-error" id="courseErr" hidden data-i18n="reg.err.course">Select a course.</p>
+              </div>
+              <div class="field">
+                <label for="intake" data-i18n="reg.intake">Preferred start</label>
+                <input id="intake" name="intake" type="text" data-i18n-placeholder="reg.ph.intake" placeholder="e.g. September 2026" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="reg.msg">Message (optional)</label>
+              <textarea id="message" name="message" data-i18n-placeholder="reg.ph.msg" placeholder="Anything we should know?"></textarea>
+            </div>
+            <button class="btn btn-wa magnetic" type="submit" data-i18n="reg.submit">Register Now</button>
+            <div class="form-success" id="formSuccess" hidden data-i18n="reg.ok">WhatsApp is opening with your details. If it does not open, tap the WhatsApp button.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="location">
+      <div class="section-inner">
+        <p class="eyebrow reveal" data-i18n="loc.eyebrow">Visit us</p>
+        <h2 class="section-title reveal" data-i18n="loc.title">Location</h2>
+        <div class="rule reveal"></div>
+        <div class="location-grid">
+          <div class="map-frame reveal">
+            <iframe
+              title="PPKS Baking & Cooking Academy on Google Maps"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=5.9206511,116.07838&z=17&output=embed"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="location-copy reveal">
+            <address>
+              Lot 10, 11, 2nd Floor,<br />
+              Windrose Square,<br />
+              Jalan Pintas Penampang By Pass,<br />
+              88300 Penampang, Sabah.
+            </address>
+            <p style="color:var(--text-muted);margin:0 0 1.25rem;font-size:0.92rem">
+              <a href="mailto:ppks.com.my@gmail.com">ppks.com.my@gmail.com</a><br />
+              <a href="https://www.ppks.com.my" target="_blank" rel="noopener noreferrer">www.ppks.com.my</a>
+            </p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem">
+              <a class="btn btn-gold magnetic" href="https://maps.app.goo.gl/9gJ88r6btWrmy1DQA" target="_blank" rel="noopener noreferrer" data-i18n="loc.maps">Get Directions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="final">
+      <div class="section-inner">
+        <h2 class="section-title reveal" data-i18n="final.title">Ready to start your culinary journey?</h2>
+        <p class="section-lead reveal" data-i18n="final.lead">Book your free 1-week trial and find which programme fits you.</p>
+        <div class="hero-ctas" style="justify-content:center">
+          <a class="btn btn-gold magnetic" href="#register" data-i18n="cta.registerNow">Register Now</a>
+          <a class="btn btn-outline magnetic" id="heroWa" href="#" data-i18n="cta.waNow">WhatsApp Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <img class="footer-logo" src="assets/ppks-logo.jpg" alt="PPKS — Sabah Skills Development Centre" width="760" height="375" />
+        <p data-i18n-html="footer.about">Baking &amp; Cooking Academy<br />Pusat Pembangunan Kemahiran Sabah<br />Est. 30 March 1999</p>
+        <div class="socials">
+          <a href="https://www.tiktok.com/@ppks.official" target="_blank" rel="noopener noreferrer" data-i18n-aria="aria.tt" aria-label="TikTok @ppks.official">TT</a>
+          <a href="https://www.facebook.com/search/top?q=Pusat%20Pembangunan%20Kemahiran%20Sabah" target="_blank" rel="noopener noreferrer" data-i18n-aria="aria.fb" aria-label="Facebook — Pusat Pembangunan Kemahiran Sabah">FB</a>
+          <a data-todo="instagram-url" data-i18n-aria="aria.ig" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.contact">Contact</h4>
+        <div class="footer-links">
+          <a id="footerWaAng" href="#">017-864 0709 (Chef Ang)</a>
+          <a href="mailto:ppks.com.my@gmail.com">ppks.com.my@gmail.com</a>
+          <a href="https://www.ppks.com.my" target="_blank" rel="noopener noreferrer">www.ppks.com.my</a>
+        </div>
+      </div>
+      <div>
+        <h4 data-i18n="footer.visit">Visit</h4>
+        <p>Lot 10, 11, 2nd Floor, Windrose Square, Jalan Pintas Penampang By Pass, 88300 Penampang, Sabah.</p>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> <span data-i18n="footer.copy">PPKS Baking &amp; Cooking Academy. All rights reserved.</span></p>
+  </footer>
+
+  <a class="float-wa" id="floatWa" href="#" data-i18n-aria="aria.wa" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" data-i18n-aria="aria.lightbox" aria-label="Enlarged photo" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" data-i18n-aria="aria.close" aria-label="Close">✕</button>
+    <img id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- AI Chatbot -->
+  <button class="chat-fab magnetic" id="chatFab" type="button" aria-expanded="false" aria-controls="chatPanel" data-i18n="chat.fab">ASK AI</button>
+  <div class="chat-panel" id="chatPanel" role="dialog" data-i18n-aria="aria.chat" aria-label="PPKS course assistant" aria-modal="false">
+    <div class="chat-header">
+      <div>
+        <h2 data-i18n="chat.title">PPKS Assistant</h2>
+        <p data-i18n="chat.sub">Ask about courses, fees, and placements</p>
+      </div>
+      <button class="chat-close" id="chatClose" type="button" data-i18n-aria="aria.closeChat" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+    <div class="chat-quick" id="chatQuick">
+      <button type="button" data-i18n-q="chat.q1q" data-q="What is the SKM course fee and promo price?" data-i18n="chat.q1">SKM fees</button>
+      <button type="button" data-i18n-q="chat.q2q" data-q="Tell me about the 2-year course, 9 certificates, and practical allowance." data-i18n="chat.q2">2-year course</button>
+      <button type="button" data-i18n-q="chat.q3q" data-q="Where is PPKS located and how do I register or try one free week?" data-i18n="chat.q3">Location &amp; register</button>
+    </div>
+    <form class="chat-input-row" id="chatForm">
+      <label class="sr-only" for="chatInput" data-i18n="aria.chatInput">Your message</label>
+      <input id="chatInput" type="text" data-i18n-placeholder="chat.ph" placeholder="Ask a question…" autocomplete="off" />
+      <button type="submit" data-i18n="chat.send">Send</button>
+    </form>
+  </div>
+
+  <script>
+    (function () {
+      const WA_ANG = "60178640709";
+      const DEFAULT_MSG = "Hi Chef Ang, I'm interested in PPKS Baking & Cooking Academy";
+
+      function waLink(number, text) {
+        return "https://wa.me/" + number + "?text=" + encodeURIComponent(text);
+      }
+
+      function setWa(el, number, text) {
+        if (!el) return;
+        el.href = waLink(number, text);
+        if (el.tagName === "A") {
+          el.target = "_blank";
+          el.rel = "noopener noreferrer";
+        }
+      }
+
+      setWa(document.getElementById("heroWa"), WA_ANG, DEFAULT_MSG);
+      setWa(document.getElementById("floatWa"), WA_ANG, DEFAULT_MSG);
+      setWa(document.getElementById("footerWaAng"), WA_ANG, DEFAULT_MSG);
+
+      document.querySelectorAll("[data-prefill-course]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          var val = a.getAttribute("data-prefill-course");
+          var sel = document.getElementById("course");
+          if (val && sel) sel.value = val;
+        });
+      });
+
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      var I18N = {
+        en: {
+          "logo.sub": "Baking & Cooking Academy",
+          "nav.courses": "Courses",
+          "nav.curriculum": "Modules",
+          "nav.careers": "Hotels",
+          "nav.register": "Register",
+          "nav.location": "Visit",
+          "nav.kitchen": "Kitchen",
+          "nav.facial": "Facial",
+          "cta.wa": "WhatsApp",
+          "cta.waNow": "WhatsApp Us Now",
+          "cta.courses": "See Courses",
+          "cta.waCourse": "WhatsApp this course",
+          "cta.register": "Register",
+          "cta.registerNow": "Register Now",
+          "cta.learn": "Learn more",
+          "cta.promo": "Ask about the promo",
+          "cta.hotels": "WhatsApp about placements",
+          "cta.xhs": "Xiaohongshu / 小红书",
+          "hero.brand": "Baking & Cooking Academy · Est. 1999",
+          "hero.badge": "PPKS Baking & Cooking Academy",
+          "hero.h1": "Turn your passion for baking & cooking into a career",
+          "hero.sub": "Professional culinary and baking training in Penampang, Sabah. 2-year pathway, 9 certificates, hotel practical, and allowance of RM1,500 / month or above. No SPM required.",
+          "pill.years": "2-Year Programme",
+          "pill.certs": "9 Certificates",
+          "pill.practical": "Practical Training",
+          "pill.allow": "Allowance RM1,500+/month",
+          "pill.spm": "No SPM Required",
+          "nav.why": "Why PPKS",
+          "nav.life": "Student Life",
+          "why.title": "Why students choose PPKS",
+          "why.lead": "A Sabah academy built for careers — not a brochure full of guarantees we cannot make.",
+          "why.certs": "9 certificates per course",
+          "why.certsp": "SKM Levels 1–3, centre professional diplomas, a diploma, an advanced diploma, and a hotel practical certificate.",
+          "why.years": "2-year programme",
+          "why.yearsp": "1 year at the training centre + 1 year hotel practical at a 5-star hotel.",
+          "why.spm": "No SPM required",
+          "why.spmp": "Beginners and career-switchers are welcome. Age is not limited.",
+          "why.chefs": "Experienced instructors",
+          "why.chefsp": "Chef is a Halal Certificate Holder.",
+          "why.hotels": "Workplace practical",
+          "why.hotelsp": "Partner hotels. Practical allowance RM1,500 / month or above.",
+          "why.pay": "Tuition installment",
+          "why.payp": "Interest-free instalment plans are available.",
+          "why.sch": "Financial aid application help",
+          "why.schp": "For eligible students.",
+          "cat.pro": "Professional programmes",
+          "cat.biz": "Business & career",
+          "cat.life": "Short courses",
+          "cat.flag": "Flagship",
+          "cat.shop": "Start a shop",
+          "cat.adv": "Advanced",
+          "tile.skm1": "SKM Level 1",
+          "tile.skm1p": "Malaysian Skills Certificate. Ask Chef Ang for current intake.",
+          "tile.skm2": "SKM Level 2",
+          "tile.skm2p": "Build on Level 1. Culinary, pastry, or bread track.",
+          "tile.skm3": "SKM Level 3",
+          "tile.skm3p": "Advanced skills certificate. Details via WhatsApp.",
+          "tile.dipc": "Diploma in Culinary Arts",
+          "tile.dipcp": "Warnborough College UK pathway. Tuition: ask Chef Ang.",
+          "tile.dipp": "Diploma in Patisserie",
+          "tile.dippp": "Pastry pathway. Promo: first 5 registrations, 50% off SKM / diploma.",
+          "tile.bizp": "Setup, location, suppliers, machines, costing — not only kitchen skills.",
+          "tile.adv": "Advanced Commercial Course",
+          "tile.advp": "For people already cooking who want commercial production. Ask for details.",
+          "tile.hobby": "Hobby Class",
+          "tile.hobbyp": "Bake for home and weekends.",
+          "tile.kids": "Children Class (Age 6–15)",
+          "tile.kidsp": "For ages 6 to 15.",
+          "tile.fam": "Parent & Child Class",
+          "tile.famp": "Parents learn together with their children.",
+          "tile.priv": "Private one-to-one",
+          "tile.privp": "Specialist session with the chef.",
+          "trial.title": "Free 1-week trial",
+          "trial.lead": "Try one week before you decide. Fill in the form and we will contact you.",
+          "trial.cta": "Book my free trial",
+          "certs.title": "One course, 9 certificates",
+          "cert.1": "SKM Level 1",
+          "cert.2": "SKM Level 2",
+          "cert.3": "SKM Level 3",
+          "cert.4": "Centre Professional Diploma Level 1",
+          "cert.5": "Centre Professional Diploma Level 2",
+          "cert.6": "Centre Professional Diploma Level 3",
+          "cert.7": "Diploma in Patisserie / Culinary Arts",
+          "cert.8": "Advanced Diploma",
+          "cert.9": "Hotel Practical Certificate",
+          "certs.note": "Bonus: Annual Best Performance Certificate",
+          "hotels.genting": "Recruitment / visit — not a confirmed internship",
+          "biz.title": "Want to start your own bakery?",
+          "biz.lead": "One-stop consulting and resources for bakery owners.",
+          "biz.1": "Site selection consulting",
+          "biz.2": "Renovation and fit-out",
+          "biz.3": "Funding and financing introduction",
+          "biz.4": "Technical consulting",
+          "biz.5": "Direct contact with equipment supplier factories",
+          "biz.6": "Factory supply of materials",
+          "biz.7": "Staff training",
+          "biz.8": "And more — just ask",
+          "path.title": "What would you like to learn?",
+          "path.cook": "Baking & Cooking",
+          "path.cookp": "The main academy. Courses are open now.",
+          "path.beauty": "Beauty & Facial",
+          "path.beautyp": "Coming soon. Join the waitlist — not open yet.",
+          "path.wait": "Join waitlist",
+          "faq.title": "Frequently asked questions",
+          "faq.q1": "Do I need SPM?",
+          "faq.a1": "No. Beginners can join.",
+          "faq.q2": "How long is the flagship programme?",
+          "faq.a2": "2 years: 1 year at the training centre + 1 year hotel practical at a 5-star hotel.",
+          "faq.q3": "How many certificates can I receive?",
+          "faq.a3": "9 per course: SKM Levels 1–3, centre professional diplomas, a diploma, an advanced diploma, and a hotel practical certificate.",
+          "faq.q4": "Is practical training provided?",
+          "faq.a4": "Yes — placements are not limited to Sabah; other places are possible too.",
+          "faq.q5": "How much is the allowance?",
+          "faq.a5": "RM1,500 per month or above.",
+          "faq.q6": "Can I pay by instalment?",
+          "faq.a6": "Interest-free instalment plans are available.",
+          "faq.q7": "Can I apply for financial aid?",
+          "faq.a7": "We can help eligible students apply.",
+          "faq.q8": "Do you have children’s, hobby, or private classes?",
+          "faq.a8": "Yes. Choose them on the form and we will arrange dates.",
+          "faq.q9": "How do I register?",
+          "faq.a9": "Fill the form. WhatsApp opens to Chef Ang with your details. Or tap WhatsApp.",
+          "faq.q10": "Can I find a job after graduation?",
+          "faq.a10": "We help with job placement, and partner hotels often take practical students on as permanent staff.",
+          "faq.q11": "Do you provide accommodation for outstation students?",
+          "faq.a11": "Yes, accommodation is available for outstation students. Ask Chef Ang for details.",
+          "final.title": "Ready to start your culinary journey?",
+          "final.lead": "Book your free 1-week trial and find which programme fits you.",
+          "reg.ok": "WhatsApp is opening with your details. If it does not open, tap the WhatsApp button.",
+          "reg.opt.cul": "Culinary Arts",
+          "reg.opt.pat": "Patisserie",
+          "reg.opt.hob": "Hobby Class",
+          "reg.opt.kid": "Children Class",
+          "reg.opt.fam": "Parent & Child Class",
+          "reg.opt.priv": "Private Class",
+          "trust.est": "<strong>Est. 1999</strong>",
+          "trust.jpk": "JPK · 技能发展局",
+          "trust.uk": "Warnborough College UK",
+          "trust.certs": "2 years · 9 certificates",
+          "trust.halal": "Chef: Halal Certificate Holder",
+          "courses.eyebrow": "Programmes",
+          "courses.title": "Choose your path",
+          "courses.lead": "The flagship chef pathway is 2 years and leads to 9 certificates. Also SKM, a bakery business course, and UK Diploma options.",
+          "courses.a.badge": "2 years · 9 certs",
+          "courses.a.kicker": "Flagship",
+          "courses.a.h": "2-Year Chef Course",
+          "courses.a.meta": "1 year at the training centre + 1 year practical at a 5-star hotel",
+          "courses.a.allowLabel": "Practical allowance",
+          "courses.a.allow": "RM1,500 / month or above",
+          "courses.a.allowNote": "At 5-star partner hotels.",
+          "courses.tuition": "Tuition: ask Chef Ang",
+          "courses.a.l1": "9 certificates on completion.",
+          "courses.a.l2": "UK Diploma and Advanced Diploma in Patisserie and Culinary Art available",
+          "courses.a.l3": "Hotel practical at 5-star partner hotels",
+          "courses.a.l4": "No SPM requirement · unlimited age",
+          "courses.b.badge": "Promo",
+          "courses.b.kicker": "SKM",
+          "courses.b.h": "1-Year SKM Course",
+          "courses.b.meta": "6 months academy + 6 months bakery or hotel · 5 days/week",
+          "courses.b.fee": "Tuition",
+          "courses.b.save": "Limited promo price",
+          "courses.b.inc": "Uniform, ingredients, notes and exam fees included",
+          "courses.b.l1": "Chef shirt, apron, cap included",
+          "courses.b.l2": "SKM Level 1 and 2 + PPKS Professional Certificates",
+          "courses.b.l3": "5-star hotel placement pathway",
+          "courses.c.badge": "Start a shop",
+          "courses.c.kicker": "Business",
+          "courses.c.h": "Bakery Business Course",
+          "courses.c.meta": "For people who want to open a bakery, not only work in a hotel kitchen.",
+          "courses.c.fee": "Details",
+          "courses.c.price": "Ask Chef Ang",
+          "courses.c.note": "Costing, production, and shop operations from the 9 course modules.",
+          "courses.c.l1": "Built around bakery management and costing",
+          "courses.c.l2": "Same kitchen standards, aimed at owners",
+          "courses.c.l3": "1-week free trial class available",
+          "courses.promo": "<strong>50% discount</strong> for the first 5 new registrations on Diploma in Patisserie Art, Diploma in Culinary Art, and SKM.",
+          "mod.eyebrow": "Course modules",
+          "mod.title": "What you study",
+          "mod.lead": "Nine core modules.",
+          "mod.1": "Ingredient knowledge and function<br /><small>配料的认识和作用</small>",
+          "mod.2": "Mixing and processing techniques<br /><small>搅拌和制作过程</small>",
+          "mod.3": "Storage of ingredients<br /><small>原料的储存</small>",
+          "mod.4": "Baking skill and product finishing<br /><small>烘焙技巧及成品研讨</small>",
+          "mod.5": "Personal hygiene check list<br /><small>个人卫生条例</small>",
+          "mod.6": "Food handling principles<br /><small>食物处理原则</small>",
+          "mod.7": "Costing<br /><small>成本计算</small>",
+          "mod.8": "Safety at work<br /><small>厨房安全</small>",
+          "mod.9": "Bakery Management<br /><small>管理学</small>",
+          "gal.eyebrow": "What you’ll learn",
+          "gal.title": "From classroom to plate",
+          "gal.lead": "Real student kitchens and finished work.",
+          "gal.videos": "Watch kitchen videos",
+          "gal.tiktok": "More on TikTok @ppks.official",
+          "gal.facebook": "Facebook",
+          "gal.instagram": "Instagram",
+          "gal.wa": "WhatsApp us",
+          "gal.cap.chef": "Chef-led pastry technique",
+          "gal.cap.station": "Small-class station work",
+          "gal.cap.collab": "Collaborative baking",
+          "gal.cap.citrus": "Precision citrus prep",
+          "gal.cap.dishes": "Course dishes & plating",
+          "gal.cap.kitchen": "Kitchen & food gallery",
+          "gal.cap.zest": "Hands-on lemon zesting",
+          "gal.cap.uk": "Warnborough UK pathway",
+          "gal.cap.rhythm": "Real kitchen rhythm",
+          "gal.cap.super": "Instructor supervision",
+          "gal.cap.skm": "SKM & culinary craft",
+          "gal.cap.team": "Team prep practice",
+          "vid.eyebrow": "Kitchen clips",
+          "vid.title": "See the training in motion",
+          "vid.lead": "Short clips from real PPKS kitchens. The 9 modules, hotel practical, 1-week trial, and 2-year / 9-certificate story.",
+          "vid.clip1": "Clip 1",
+          "vid.clip2": "Clip 2",
+          "vid.clip3": "Clip 3",
+          "vid.clip4": "Clip 4",
+          "vid.tiktok": "TikTok @ppks.official",
+          "vid.facebook": "Facebook",
+          "vid.instagram": "Instagram",
+          "vid.visit": "WhatsApp about a class visit",
+          "train.eyebrow": "Inside the kitchen",
+          "train.title": "Small class. Real supervision.",
+          "train.lead": "Professional equipment, chef instructors, and focused station work — not a lecture hall.",
+          "train.1h": "Guided technique, every session",
+          "train.1p": "Chefs work side-by-side with students on the bench — zesting, mixing, plating — so habits form the right way from day one.",
+          "train.1wa": "WhatsApp about class size",
+          "train.2h": "Train on real kitchen equipment",
+          "train.2p": "Stand mixers, scales, commercial prep tables — the same rhythm you’ll meet in hotel kitchens during practical placement.",
+          "train.2wa": "WhatsApp about facilities",
+          "train.3wa": "Chat with Chef Ang",
+          "train.3h": "Halal Certificate Holder chef",
+          "train.3p": "Our chef holds a Halal Certificate. Instruction in Bahasa Malaysia and English. Uniforms and hotel-kitchen standards.",
+          "hotels.eyebrow": "Hotel practical",
+          "hotels.title": "Workplace practical training",
+          "hotels.quote": "We normally take practical students as permanent employees after their practical training with us.",
+          "hotels.lead": "Practical allowance is RM1,500 per month or above.",
+          "hotels.mou": "Partnership / MOU",
+          "press.est": "Established 30 March 1999",
+          "press.p1": "Pusat Pembangunan Kemahiran Sabah. Baking and cooking now. Facial beauty coming soon, not yet open.",
+          "press.p2": "JPK = Jabatan Pembangunan Kemahiran (技能发展局). Warnborough College UK Centre Approval. Chef is a Halal Certificate Holder.",
+          "reg.eyebrow": "Online registration",
+          "reg.title": "Register or try 1 free week",
+          "reg.p": "Submit the form and WhatsApp opens to Chef Ang with your details. For the free trial week, Chef Ang will contact you to arrange class.",
+          "reg.reg": "Online registration",
+          "reg.trial": "1-week free trial class",
+          "reg.name": "Name",
+          "reg.phone": "WhatsApp number",
+          "reg.course": "Course interest",
+          "reg.select": "Select a course",
+          "reg.intake": "Preferred start",
+          "reg.msg": "Message (optional)",
+          "reg.submit": "Send via WhatsApp",
+          "reg.required": " (required)",
+          "reg.errTitle": "Please fix the following:",
+          "reg.err.name": "Enter your name.",
+          "reg.err.phone": "Enter a WhatsApp number.",
+          "reg.err.course": "Select a course.",
+          "reg.opt.a": "2-Year Chef Course / 两年厨师课程",
+          "reg.opt.b": "1-Year SKM Course",
+          "reg.opt.c": "Bakery Business Course / 烘焙创业课",
+          "reg.opt.d": "Facial / 美容课程",
+          "reg.opt.e": "Not sure yet",
+          "reg.ph.name": "Your full name",
+          "reg.ph.phone": "e.g. 017-xxx xxxx",
+          "reg.ph.intake": "e.g. September 2026",
+          "reg.ph.msg": "Anything we should know?",
+          "loc.eyebrow": "Visit us",
+          "loc.title": "Location",
+          "loc.maps": "Get Directions",
+          "loc.wa": "WhatsApp us",
+          "footer.about": "Baking & Cooking Academy<br />Pusat Pembangunan Kemahiran Sabah<br />Est. 30 March 1999",
+          "footer.contact": "Contact",
+          "footer.visit": "Visit",
+          "footer.copy": "PPKS Baking & Cooking Academy. All rights reserved.",
+          "chat.fab": "ASK AI",
+          "chat.title": "PPKS Assistant",
+          "chat.sub": "Ask about courses, fees, and placements",
+          "chat.send": "Send",
+          "chat.ph": "Ask a question…",
+          "chat.hello": "Hi. I can help with the 2-year course (9 certificates), SKM fees, hotel practical (RM1,500/month or above), 1-week free trial, and registration.",
+          "chat.human": "Ready to talk to a human?",
+          "chat.wa": "WhatsApp Chef Ang",
+          "chat.thinking": "Thinking…",
+          "chat.fail": "I could not reach the assistant just now. Please message Chef Ang on WhatsApp: 017-864 0709.",
+          "chat.q1": "SKM fees",
+          "chat.q2": "2-year course",
+          "chat.q3": "Location & register",
+          "chat.q1q": "What is the SKM course fee and promo price?",
+          "chat.q2q": "Tell me about the 2-year course, 9 certificates, and practical allowance.",
+          "chat.q3q": "Where is PPKS located and how do I register or try one free week?",
+          "meta.desc": "PPKS Baking & Cooking Academy, Kota Kinabalu. 2-year chef course, 9 certificates. Practical allowance RM1,500/month or above. WhatsApp Chef Ang 017-864 0709.",
+          "aria.skip": "Skip to content",
+          "aria.home": "PPKS Baking & Cooking Academy home",
+          "aria.nav": "Primary",
+          "aria.track": "Landing",
+          "aria.lang": "Language",
+          "aria.openMenu": "Open menu",
+          "aria.closeMenu": "Close menu",
+          "aria.hero": "Hero",
+          "aria.slides": "Hero slides",
+          "aria.slide": "Show photo %s",
+          "aria.trust": "Trust signals",
+          "aria.gallery": "Photo gallery",
+          "aria.clip1": "Play clip 1",
+          "aria.clip2": "Play clip 2",
+          "aria.clip3": "Play clip 3",
+          "aria.clip4": "Play clip 4",
+          "aria.press": "Credibility",
+          "aria.tt": "TikTok @ppks.official",
+          "aria.fb": "Facebook — Pusat Pembangunan Kemahiran Sabah",
+          "aria.ig": "Instagram",
+          "aria.wa": "Chat on WhatsApp",
+          "aria.lightbox": "Enlarged photo",
+          "aria.close": "Close",
+          "aria.chat": "PPKS course assistant",
+          "aria.closeChat": "Close chat",
+          "aria.chatInput": "Your message"
+        },
+        zh: {
+          "logo.sub": "烘焙与烹饪学院",
+          "nav.courses": "课程",
+          "nav.curriculum": "课程模块",
+          "nav.careers": "酒店实习",
+          "nav.register": "报名",
+          "nav.location": "参观",
+          "nav.kitchen": "烹饪",
+          "nav.facial": "美容",
+          "cta.wa": "WhatsApp",
+          "cta.waNow": "立刻 WhatsApp",
+          "cta.courses": "查看课程",
+          "cta.waCourse": "WhatsApp 询问此课",
+          "cta.register": "去报名",
+          "cta.registerNow": "立即报名",
+          "cta.learn": "了解更多",
+          "cta.promo": "询问优惠",
+          "cta.hotels": "询问酒店实习",
+          "cta.xhs": "小红书",
+          "hero.brand": "烘焙与烹饪学院 · 创办于 1999",
+          "hero.h1": "把烘焙与烹饪的热情变成事业",
+          "hero.badge": "PPKS 烘焙烹饪学院",
+          "hero.sub": "沙巴兵南邦专业烹饪与烘焙培训。两年路径、9 张证书、酒店实习，津贴每月 RM1,500 或以上。无需 SPM。",
+          "pill.years": "两年课程",
+          "pill.certs": "9 张证书",
+          "pill.practical": "酒店实习",
+          "pill.allow": "津贴每月 RM1,500 或以上",
+          "pill.spm": "无需 SPM",
+          "nav.why": "为何选 PPKS",
+          "nav.life": "校园生活",
+          "why.title": "为什么学生选 PPKS",
+          "why.lead": "沙巴的职业学院——我们不写无法兑现的保证。",
+          "why.certs": "一个课程 9 张文凭",
+          "why.certsp": "含 SKM Level 1、2、3、学院专业文凭 Level 1、2、3、文凭、高级文凭与酒店实习文凭。",
+          "why.years": "两年课程",
+          "why.yearsp": "一年在培训中心 + 一年在五星级酒店实习。",
+          "why.spm": "无需 SPM",
+          "why.spmp": "欢迎零基础与转行。年龄不限。",
+          "why.chefs": "资深导师",
+          "why.chefsp": "主厨为 Halal Certificate Holder。",
+          "why.hotels": "职场实习",
+          "why.hotelsp": "合作酒店实习。津贴每月 RM1,500 或以上。",
+          "why.pay": "学费可分期付款（无利息）",
+          "why.payp": "可分期付款，无利息。条款请问 Chef Ang。",
+          "why.sch": "可协助申请助学金（合格者）",
+          "why.schp": "合格者适用。",
+          "cat.pro": "专业课程",
+          "cat.biz": "创业与职业",
+          "cat.life": "短期课程",
+          "cat.flag": "旗舰",
+          "cat.shop": "开店",
+          "cat.adv": "进阶",
+          "tile.skm1": "SKM Level 1",
+          "tile.skm1p": "马来西亚技能证书。开课时间问 Chef Ang。",
+          "tile.skm2": "SKM Level 2",
+          "tile.skm2p": "在 1 级之上继续。烹饪、糕点或面包。",
+          "tile.skm3": "SKM Level 3",
+          "tile.skm3p": "进阶技能证书。详情 WhatsApp。",
+          "tile.dipc": "烹饪文凭",
+          "tile.dipcp": "英国 Warnborough 路径。学费请问 Chef Ang。",
+          "tile.dipp": "糕点文凭",
+          "tile.dippp": "糕点路径。前 5 名报名 SKM／文凭 50% 优惠。",
+          "tile.bizp": "开店、选址、供应商、设备与成本——不只是下厨。",
+          "tile.adv": "商业进阶课",
+          "tile.advp": "给已会做、想做商业量产的人。详情另询。",
+          "tile.hobby": "兴趣班",
+          "tile.hobbyp": "周末在家也能烤。",
+          "tile.kids": "儿童班（6–15 岁）",
+          "tile.kidsp": "适合 6–15 岁。",
+          "tile.fam": "亲子班",
+          "tile.famp": "家长带孩子一起学习。",
+          "tile.priv": "一对一私教",
+          "tile.privp": "跟主厨单独上课。",
+          "trial.title": "免费试课一周",
+          "trial.lead": "先试一周再决定，填表后我们会联络你。",
+          "trial.cta": "预约免费试课",
+          "certs.title": "一个课程 9 张文凭",
+          "cert.1": "SKM Level 1",
+          "cert.2": "SKM Level 2",
+          "cert.3": "SKM Level 3",
+          "cert.4": "学院专业文凭 Level 1",
+          "cert.5": "学院专业文凭 Level 2",
+          "cert.6": "学院专业文凭 Level 3",
+          "cert.7": "Diploma in Patisserie / Culinary Arts",
+          "cert.8": "Advanced Diploma",
+          "cert.9": "酒店实习文凭",
+          "certs.note": "年度最佳表现证书",
+          "hotels.genting": "招聘／参观——不是确认实习",
+          "hotels.title": "职场实习培训",
+          "biz.title": "想开自己的烘焙店？",
+          "biz.lead": "提供一条龙咨询与资料，助你开店。",
+          "biz.1": "选址咨询",
+          "biz.2": "装潢",
+          "biz.3": "资金介绍",
+          "biz.4": "技术（Consult）",
+          "biz.5": "设备供应商直接厂家联络（Consult）",
+          "biz.6": "厂家供应材料（Consult）",
+          "biz.7": "员工培训",
+          "biz.8": "等等（Consult）",
+          "path.title": "你想学什么？",
+          "path.cook": "烘焙与烹饪",
+          "path.cookp": "主学院。现在开课。",
+          "path.beauty": "美容课程",
+          "path.beautyp": "即将开课。先加入等候名单。",
+          "path.wait": "加入等候",
+          "faq.title": "常问问题",
+          "faq.q1": "一定要有 SPM 吗？",
+          "faq.a1": "不用。零基础可以来。",
+          "faq.q2": "旗舰课程多久？",
+          "faq.a2": "两年：一年培训中心 + 一年五星级酒店实习。",
+          "faq.q3": "可以拿到几张证书？",
+          "faq.a3": "一个课程 9 张：SKM Level 1、2、3、学院专业文凭 Level 1、2、3、文凭、高级文凭与酒店实习文凭。",
+          "faq.q4": "有实习吗？",
+          "faq.a4": "有。不一定要在沙巴，其他地区也可以。",
+          "faq.q5": "津贴多少？",
+          "faq.a5": "每月 RM1,500 或以上。",
+          "faq.q6": "可以分期吗？",
+          "faq.a6": "可以，分期付款无利息。",
+          "faq.q7": "可以申请助学金吗？",
+          "faq.a7": "可协助申请助学金（合格者）。",
+          "faq.q8": "有儿童班、兴趣班、私教吗？",
+          "faq.a8": "有。在表格里选，我们再安排日期。",
+          "faq.q9": "怎么报名？",
+          "faq.a9": "填表后 WhatsApp 会打开发给 Chef Ang。也可以直接 WhatsApp。",
+          "faq.q10": "毕业之后能找到工作吗？",
+          "faq.a10": "我们会协助就业安排，合作酒店也常把实习生转为正式员工。",
+          "faq.q11": "提供住宿与外地学生吗？",
+          "faq.a11": "有，为外地学生提供住宿。详情请问 Chef Ang。",
+          "final.title": "准备开始你的厨师之路？",
+          "final.lead": "先预约一周免费试课，再决定适合哪一门。",
+          "reg.ok": "正在打开 WhatsApp。如果没开，请点 WhatsApp 按钮。",
+          "reg.opt.cul": "烹饪",
+          "reg.opt.pat": "糕点",
+          "reg.opt.hob": "兴趣班",
+          "reg.opt.kid": "儿童班",
+          "reg.opt.fam": "亲子班",
+          "reg.opt.priv": "私教",
+          "gal.title": "PPKS 日常",
+          "hero.sub": "沙巴兵南邦专业烹饪与烘焙培训。两年路径、9 张证书、酒店实习，津贴每月 RM1,500 或以上。无需 SPM。",
+          "trust.est": "<strong>创办于 1999</strong>",
+          "trust.jpk": "JPK · 技能发展局",
+          "trust.uk": "英国 Warnborough College",
+          "trust.certs": "两年 · 9 张文凭",
+          "trust.halal": "主厨：Halal Certificate Holder",
+          "courses.eyebrow": "课程",
+          "courses.title": "选择你的路径",
+          "courses.lead": "主力厨师课程为期两年，可获 9 张证书。另有 SKM、烘焙创业课，以及英国文凭选项。",
+          "courses.a.badge": "两年 · 9 证",
+          "courses.a.kicker": "主力课程",
+          "courses.a.h": "两年厨师课程",
+          "courses.a.meta": "培训中心上课 1 年 + 五星级酒店实习 1 年",
+          "courses.a.allowLabel": "实习津贴",
+          "courses.a.allow": "每月 RM1,500 或以上",
+          "courses.a.allowNote": "五星级合作酒店。",
+          "courses.tuition": "学费请询问 Chef Ang",
+          "courses.a.l1": "毕业可获 9 张证书。",
+          "courses.a.l2": "可报英国糕点与烹饪 Diploma / Advanced Diploma",
+          "courses.a.l3": "五星级合作酒店实习",
+          "courses.a.l4": "无需 SPM · 不限年龄",
+          "courses.b.badge": "优惠",
+          "courses.b.kicker": "SKM",
+          "courses.b.h": "一年 SKM 课程",
+          "courses.b.meta": "学院 6 个月 + 面包店或酒店 6 个月 · 每周 5 天",
+          "courses.b.fee": "学费",
+          "courses.b.save": "限时优惠价",
+          "courses.b.inc": "含制服、原料、笔记与考试费",
+          "courses.b.l1": "含厨师衣、围裙、帽",
+          "courses.b.l2": "SKM 1、2 级 + PPKS 专业证书",
+          "courses.b.l3": "五星酒店实习路径",
+          "courses.c.badge": "开店",
+          "courses.c.kicker": "创业",
+          "courses.c.h": "烘焙创业课程",
+          "courses.c.meta": "给想开烘焙店的人，不只是进酒店厨房打工。",
+          "courses.c.fee": "详情",
+          "courses.c.price": "询问 Chef Ang",
+          "courses.c.note": "围绕九大模块里的成本计算、制作与管理。",
+          "courses.c.l1": "以烘焙管理与成本计算为主",
+          "courses.c.l2": "同一套厨房标准，面向老板",
+          "courses.c.l3": "可申请一周免费试课",
+          "courses.promo": "<strong>前 5 名报名 50% 优惠</strong>：糕点文凭、烹饪文凭与 SKM。",
+          "mod.eyebrow": "课程模块",
+          "mod.title": "课程内容",
+          "mod.lead": "九大核心模块。",
+          "mod.1": "配料的认识和作用<br /><small>Ingredient knowledge and function</small>",
+          "mod.2": "搅拌和制作过程<br /><small>Mixing and processing techniques</small>",
+          "mod.3": "原料的储存<br /><small>Storage of ingredients</small>",
+          "mod.4": "烘焙技巧及成品研讨<br /><small>Baking skill and product finishing</small>",
+          "mod.5": "个人卫生条例<br /><small>Personal hygiene check list</small>",
+          "mod.6": "食物处理原则<br /><small>Food handling principles</small>",
+          "mod.7": "成本计算<br /><small>Costing</small>",
+          "mod.8": "厨房安全<br /><small>Safety at work</small>",
+          "mod.9": "管理学<br /><small>Bakery Management</small>",
+          "gal.eyebrow": "课堂所学",
+          "gal.title": "从课堂到成品",
+          "gal.lead": "真实学生厨房与成品。",
+          "gal.videos": "观看厨房短片",
+          "gal.tiktok": "更多 TikTok @ppks.official",
+          "gal.facebook": "Facebook",
+          "gal.instagram": "Instagram",
+          "gal.wa": "WhatsApp 我们",
+          "gal.cap.chef": "主厨指导糕点技法",
+          "gal.cap.station": "小班工位实作",
+          "gal.cap.collab": "小组烘焙",
+          "gal.cap.citrus": "精准柑橘处理",
+          "gal.cap.dishes": "课程成品与摆盘",
+          "gal.cap.kitchen": "厨房与成品相册",
+          "gal.cap.zest": "动手刨柠檬皮",
+          "gal.cap.uk": "英国 Warnborough 路径",
+          "gal.cap.rhythm": "真实厨房节奏",
+          "gal.cap.super": "导师现场指导",
+          "gal.cap.skm": "SKM 与烹饪技艺",
+          "gal.cap.team": "团队备料练习",
+          "vid.eyebrow": "厨房短片",
+          "vid.title": "看实际上课",
+          "vid.lead": "真实厨房短片。九大模块、酒店实习、一周试课、两年八证。",
+          "vid.clip1": "短片 1",
+          "vid.clip2": "短片 2",
+          "vid.clip3": "短片 3",
+          "vid.clip4": "短片 4",
+          "vid.tiktok": "TikTok @ppks.official",
+          "vid.facebook": "Facebook",
+          "vid.instagram": "Instagram",
+          "vid.visit": "WhatsApp 预约参观课堂",
+          "train.eyebrow": "走进厨房",
+          "train.title": "小班教学。现场指导。",
+          "train.lead": "专业设备、厨师导师、工位实作——不是大教室听课。",
+          "train.1h": "每堂课都有技法指导",
+          "train.1p": "厨师在台边和学生一起刨皮、搅拌、摆盘，从第一天养成正确习惯。",
+          "train.1wa": "询问班级人数",
+          "train.2h": "用真实厨房设备上课",
+          "train.2p": "搅拌机、秤、商用备料台——和酒店实习时会遇到的节奏一样。",
+          "train.2wa": "询问设备",
+          "train.3wa": "联络 Chef Ang",
+          "train.3h": "主厨为 Halal Certificate Holder",
+          "train.3p": "我们的厨师持有 Halal 证书。课堂用马来文与英文。",
+          "hotels.eyebrow": "酒店实习",
+          "hotels.title": "职场实习培训",
+          "hotels.quote": "实习结束后，我们通常会把实习生转为正式员工。",
+          "hotels.lead": "实习津贴每月 RM1,500 或以上。",
+          "hotels.mou": "合作备忘录",
+          "press.est": "创办于 1999 年 3 月 30 日",
+          "press.p1": "沙巴技能发展中心。目前做烘焙与烹饪。美容课程尚未开课。",
+          "press.p2": "JPK = 技能发展局（Jabatan Pembangunan Kemahiran）。英国 Warnborough College 中心批准。主厨为 Halal Certificate Holder。",
+          "reg.eyebrow": "网上报名",
+          "reg.title": "报名，或免费试课一周",
+          "reg.p": "提交后会打开 WhatsApp 把资料发给 Chef Ang。若选免费试课，Chef Ang 会再联络你安排一周试课。",
+          "reg.reg": "网上报名",
+          "reg.trial": "一周免费试课",
+          "reg.name": "姓名",
+          "reg.phone": "WhatsApp 号码",
+          "reg.course": "意向课程",
+          "reg.select": "请选择课程",
+          "reg.intake": "希望开学时间",
+          "reg.msg": "留言（选填）",
+          "reg.submit": "经 WhatsApp 送出",
+          "reg.required": "（必填）",
+          "reg.errTitle": "请先补上这些资料：",
+          "reg.err.name": "请填写姓名。",
+          "reg.err.phone": "请填写 WhatsApp 号码。",
+          "reg.err.course": "请选择课程。",
+          "reg.opt.a": "两年厨师课程 / 2-Year Chef Course",
+          "reg.opt.b": "一年 SKM 课程",
+          "reg.opt.c": "烘焙创业课 / Bakery Business Course",
+          "reg.opt.d": "美容课程 / Facial",
+          "reg.opt.e": "还不确定",
+          "reg.ph.name": "你的姓名",
+          "reg.ph.phone": "例如 017-xxx xxxx",
+          "reg.ph.intake": "例如 2026 年 9 月",
+          "reg.ph.msg": "还有什么要告诉我们？",
+          "loc.eyebrow": "参观",
+          "loc.title": "地址",
+          "loc.maps": "打开地图",
+          "loc.wa": "WhatsApp 我们",
+          "footer.about": "烘焙与烹饪学院<br />沙巴技能发展中心<br />创办于 1999 年 3 月 30 日",
+          "footer.contact": "联络",
+          "footer.visit": "参观",
+          "footer.copy": "PPKS 烘焙烹饪学院。版权所有。",
+          "chat.fab": "问 AI",
+          "chat.title": "PPKS 助手",
+          "chat.sub": "询问课程、学费与酒店实习",
+          "chat.send": "发送",
+          "chat.ph": "输入问题…",
+          "chat.hello": "你好。可以问两年九证课程、SKM 学费、酒店实习（每月 RM1,500 或以上）、一周免费试课和报名。",
+          "chat.human": "要找真人咨询吗？",
+          "chat.wa": "WhatsApp Chef Ang",
+          "chat.thinking": "思考中…",
+          "chat.fail": "助理暂时连不上。请 WhatsApp Chef Ang：017-864 0709。",
+          "chat.q1": "SKM 学费",
+          "chat.q2": "两年课程",
+          "chat.q3": "地址与报名",
+          "chat.q1q": "SKM 学费和优惠价是多少？",
+          "chat.q2q": "两年课程、9 张证书和实习津贴怎么算？",
+          "chat.q3q": "PPKS 在哪里？怎么报名或申请一周免费试课？",
+          "meta.desc": "PPKS 烘焙烹饪学院，亚庇。两年厨师课程，9 张证书。实习津贴每月 RM1,500 或以上。WhatsApp Chef Ang 017-864 0709。",
+          "aria.skip": "跳到正文",
+          "aria.home": "PPKS 烘焙烹饪学院首页",
+          "aria.nav": "主导航",
+          "aria.track": "页面切换",
+          "aria.lang": "语言",
+          "aria.openMenu": "打开菜单",
+          "aria.closeMenu": "关闭菜单",
+          "aria.hero": "首页主视觉",
+          "aria.slides": "首页照片",
+          "aria.slide": "显示第 %s 张照片",
+          "aria.trust": "信任标志",
+          "aria.gallery": "照片相册",
+          "aria.clip1": "播放短片 1",
+          "aria.clip2": "播放短片 2",
+          "aria.clip3": "播放短片 3",
+          "aria.clip4": "播放短片 4",
+          "aria.press": "资质",
+          "aria.tt": "TikTok @ppks.official",
+          "aria.fb": "Facebook — 沙巴技能发展中心",
+          "aria.ig": "Instagram",
+          "aria.wa": "用 WhatsApp 联络",
+          "aria.lightbox": "放大照片",
+          "aria.close": "关闭",
+          "aria.chat": "PPKS 课程助手",
+          "aria.closeChat": "关闭对话",
+          "aria.chatInput": "输入你的问题"
+        },
+        ms: {
+          "cta.register": "Daftar",
+          "cta.registerNow": "Daftar Sekarang",
+          "cta.learn": "Ketahui lanjut",
+          "cta.courses": "Lihat kursus",
+          "cta.waNow": "WhatsApp Kami",
+          "cta.promo": "Tanya promosi",
+          "nav.courses": "Kursus",
+          "nav.why": "Kenapa PPKS",
+          "nav.careers": "Latihan industri",
+          "nav.life": "Kehidupan pelajar",
+          "nav.register": "Daftar",
+          "nav.location": "Hubungi",
+          "nav.kitchen": "Dapur",
+          "nav.facial": "Facial",
+          "hero.badge": "PPKS Baking & Cooking Academy",
+          "hero.h1": "Jadikan minat baking & cooking sebagai kerjaya",
+          "hero.sub": "Latihan kulinari profesional di Penampang, Sabah. Program 2 tahun, 9 sijil, latihan hotel, elaun RM1,500 / bulan atau lebih. SPM tidak wajib.",
+          "pill.years": "Program 2 Tahun",
+          "pill.certs": "9 Sijil",
+          "pill.practical": "Latihan Praktikal",
+          "pill.allow": "Elaun RM1,500+/bulan",
+          "pill.spm": "SPM tidak wajib",
+          "why.title": "Kenapa pelajar pilih PPKS",
+          "why.lead": "Akademi kerjaya di Sabah — kami tidak menulis jaminan yang tidak boleh ditepati.",
+          "why.certs": "9 sijil setiap kursus",
+          "why.certsp": "SKM Level 1–3, diploma profesional pusat, diploma, diploma lanjutan, dan sijil praktikal hotel.",
+          "why.years": "Program 2 tahun",
+          "why.yearsp": "1 tahun di pusat latihan + 1 tahun latihan hotel di hotel 5 bintang.",
+          "why.spm": "SPM tidak wajib",
+          "why.spmp": "Pemula dan penukar kerjaya dialu-alukan.",
+          "why.chefs": "Jurulatih berpengalaman",
+          "why.chefsp": "Chef ialah Halal Certificate Holder.",
+          "why.hotels": "Latihan tempat kerja",
+          "why.hotelsp": "Hotel rakan kongsi. Elaun praktikal RM1,500 / bulan atau lebih.",
+          "why.pay": "Yuran boleh ansuran",
+          "why.payp": "Ansuran tanpa faedah disediakan.",
+          "why.sch": "Bantuan permohonan bantuan kewangan",
+          "why.schp": "Untuk pelajar yang layak.",
+          "courses.title": "Apa yang boleh anda pelajari",
+          "courses.lead": "Pilih laluan — atau pilih “Belum pasti” dan Chef Ang akan cadangkan.",
+          "cat.pro": "Program profesional",
+          "cat.biz": "Perniagaan & kerjaya",
+          "cat.life": "Kursus jangka pendek",
+          "trial.title": "Percubaan percuma 1 minggu",
+          "trial.lead": "Cuba seminggu dahulu sebelum putuskan. Isi borang dan kami akan hubungi anda.",
+          "trial.cta": "Tempah percubaan percuma",
+          "certs.title": "Satu kursus, 9 sijil",
+          "cert.1": "SKM Level 1",
+          "cert.2": "SKM Level 2",
+          "cert.3": "SKM Level 3",
+          "cert.4": "Diploma Profesional Pusat Level 1",
+          "cert.5": "Diploma Profesional Pusat Level 2",
+          "cert.6": "Diploma Profesional Pusat Level 3",
+          "cert.7": "Diploma dalam Patisserie / Seni Kulinari",
+          "cert.8": "Diploma Lanjutan",
+          "cert.9": "Sijil Praktikal Hotel",
+          "certs.note": "Bonus: Sijil Prestasi Terbaik Tahunan",
+          "hotels.title": "Latihan praktikal tempat kerja",
+          "hotels.genting": "Pengambilan / lawatan — bukan intern tetap",
+          "gal.title": "Kehidupan di PPKS",
+          "biz.title": "Nak buka bakery sendiri?",
+          "biz.lead": "Perundingan dan sumber sehenti untuk pemilik bakery.",
+          "path.title": "Anda mahu belajar apa?",
+          "path.cook": "Baking & Cooking",
+          "path.cookp": "Akademi utama. Kursus sedang dibuka.",
+          "path.beauty": "Beauty & Facial",
+          "path.beautyp": "Akan datang. Sertai senarai menunggu.",
+          "path.wait": "Sertai senarai",
+          "faq.title": "Soalan lazim",
+          "faq.q1": "Perlu SPM ke?",
+          "faq.a1": "Tidak. Pemula boleh sertai.",
+          "faq.q2": "Berapa lama program utama?",
+          "faq.a2": "2 tahun: 1 tahun di pusat latihan + 1 tahun latihan hotel di hotel 5 bintang.",
+          "faq.q3": "Berapa sijil boleh saya terima?",
+          "faq.a3": "9 setiap kursus: SKM Level 1–3, diploma profesional pusat, diploma, diploma lanjutan, dan sijil praktikal hotel.",
+          "faq.q4": "Ada latihan praktikal?",
+          "faq.a4": "Ya, penempatan tidak terhad kepada Sabah; tempat lain juga boleh.",
+          "faq.q5": "Berapa elaun?",
+          "faq.a5": "RM1,500 sebulan atau lebih.",
+          "faq.q6": "Boleh bayar ansuran?",
+          "faq.a6": "Ya, ansuran tanpa faedah disediakan.",
+          "faq.q7": "Boleh mohon bantuan kewangan?",
+          "faq.a7": "Kami boleh bantu pelajar yang layak memohon.",
+          "faq.q8": "Ada kelas kanak-kanak, hobi atau persendirian?",
+          "faq.a8": "Ya. Pilih dalam borang dan kami aturkan tarikh.",
+          "faq.q9": "Macam mana nak daftar?",
+          "faq.a9": "Isi borang. WhatsApp akan dibuka kepada Chef Ang. Atau tekan WhatsApp.",
+          "final.title": "Sedia mulakan perjalanan kulinari anda?",
+          "final.lead": "Tempah percubaan percuma seminggu dan cari program yang sesuai.",
+          "reg.title": "Daftar atau cuba 1 minggu percuma",
+          "reg.p": "Hantar borang dan WhatsApp dibuka kepada Chef Ang. Untuk percubaan, Chef Ang akan hubungi anda.",
+          "reg.submit": "Daftar Sekarang",
+          "reg.ok": "WhatsApp sedang dibuka. Jika tidak, tekan butang WhatsApp.",
+          "reg.opt.e": "Belum pasti",
+          "reg.opt.cul": "Culinary Arts",
+          "reg.opt.pat": "Patisserie",
+          "reg.opt.b": "SKM",
+          "reg.opt.a": "Kursus Chef 2 Tahun",
+          "reg.opt.c": "Kursus Perniagaan Bakery",
+          "reg.opt.hob": "Kelas Hobi",
+          "reg.opt.kid": "Kelas Kanak-kanak",
+          "reg.opt.fam": "Kelas Ibu Bapa & Anak",
+          "reg.opt.priv": "Kelas Persendirian",
+          "reg.opt.d": "Beauty / Facial",
+          "loc.maps": "Arah Google Maps",
+          "chat.fab": "Tanya AI"
+        }
+      };
+
+      function applyLang(lang) {
+        var pack = I18N[lang] || I18N.en;
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : lang === "ms" ? "ms" : "en";
+        document.querySelectorAll("[data-i18n]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n");
+          if (pack[k]) el.textContent = pack[k];
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-html");
+          if (pack[k]) el.innerHTML = pack[k];
+        });
+        document.querySelectorAll("[data-i18n-caption]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-caption");
+          if (pack[k]) el.setAttribute("data-caption", pack[k]);
+        });
+        document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-placeholder");
+          if (pack[k]) el.setAttribute("placeholder", pack[k]);
+        });
+        document.querySelectorAll("[data-i18n-q]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-q");
+          if (pack[k]) el.setAttribute("data-q", pack[k]);
+        });
+        document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+          var k = el.getAttribute("data-i18n-aria");
+          if (!pack[k]) return;
+          var n = el.getAttribute("data-n");
+          el.setAttribute("aria-label", n ? pack[k].replace("%s", n) : pack[k]);
+        });
+        var menuBtn = document.querySelector(".nav-toggle");
+        if (menuBtn) {
+          var open = menuBtn.getAttribute("aria-expanded") === "true";
+          menuBtn.setAttribute("aria-label", pack[open ? "aria.closeMenu" : "aria.openMenu"]);
+        }
+        if (pack["meta.desc"]) {
+          var desc = document.querySelector('meta[name="description"]');
+          var og = document.getElementById("ogDesc");
+          var tw = document.getElementById("twDesc");
+          if (desc) desc.setAttribute("content", pack["meta.desc"]);
+          if (og) og.setAttribute("content", pack["meta.desc"]);
+          if (tw) tw.setAttribute("content", pack["meta.desc"]);
+        }
+        document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+          btn.classList.toggle("is-on", btn.getAttribute("data-lang") === lang);
+        });
+        try { localStorage.setItem("ppks_lang", lang); } catch (e) {}
+      }
+
+      document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyLang(btn.getAttribute("data-lang"));
+        });
+      });
+      var savedLang = "en";
+      try { savedLang = localStorage.getItem("ppks_lang") || "en"; } catch (e) {}
+      applyLang(savedLang);
+
+      /* Mobile nav */
+      var toggle = document.querySelector(".nav-toggle");
+      var mobile = document.getElementById("navMobile");
+      toggle.addEventListener("click", function () {
+        var open = mobile.classList.toggle("open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        var pack = packLang();
+        toggle.setAttribute("aria-label", pack[open ? "aria.closeMenu" : "aria.openMenu"]);
+      });
+      mobile.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () {
+          mobile.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      function packLang() {
+        var l = document.documentElement.lang;
+        if (l === "zh-CN") return I18N.zh;
+        if (l === "ms") return I18N.ms;
+        return I18N.en;
+      }
+      function setFieldError(id, on) {
+        var input = document.getElementById(id);
+        var err = document.getElementById(id + "Err");
+        var field = input && input.closest(".field");
+        if (field) field.classList.toggle("is-invalid", on);
+        if (input) input.setAttribute("aria-invalid", on ? "true" : "false");
+        if (err) err.hidden = !on;
+      }
+      /* Registration → WhatsApp */
+      document.getElementById("regForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var nameEl = document.getElementById("name");
+        var phoneEl = document.getElementById("phone");
+        var courseEl = document.getElementById("course");
+        var name = nameEl.value.trim();
+        var phone = phoneEl.value.trim();
+        var course = courseEl.value;
+        var intake = document.getElementById("intake").value.trim();
+        var message = document.getElementById("message").value.trim();
+        var intentEl = document.querySelector("input[name='intent']:checked");
+        var intent = intentEl ? intentEl.value : "register";
+        var pack = packLang();
+        var missing = [];
+        setFieldError("name", !name);
+        setFieldError("phone", !phone);
+        setFieldError("course", !course);
+        if (!name) missing.push({ id: "name", msg: pack["reg.err.name"] });
+        if (!phone) missing.push({ id: "phone", msg: pack["reg.err.phone"] });
+        if (!course) missing.push({ id: "course", msg: pack["reg.err.course"] });
+        var box = document.getElementById("formErrors");
+        var list = document.getElementById("formErrorList");
+        if (missing.length) {
+          list.innerHTML = "";
+          missing.forEach(function (item) {
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = "#" + item.id;
+            a.textContent = item.msg;
+            li.appendChild(a);
+            list.appendChild(li);
+          });
+          box.hidden = false;
+          box.focus();
+          return;
+        }
+        box.hidden = true;
+        list.innerHTML = "";
+        var lines;
+        if (intent === "trial") {
+          lines = [
+            "Hi Chef Ang, I want to book the 1-week FREE trial class at PPKS.",
+            "请安排一周免费试课。",
+            "",
+            "Name / 姓名: " + name,
+            "WhatsApp: " + phone,
+            "Course interest / 课程: " + course,
+            "Preferred start / 入学: " + (intake || "Not specified"),
+            "Message / 留言: " + (message || "-")
+          ];
+        } else {
+          lines = [
+            "Hi Chef Ang, I'd like to register at PPKS Baking & Cooking Academy.",
+            "我想报名 PPKS 烘焙烹饪学院。",
+            "",
+            "Name / 姓名: " + name,
+            "WhatsApp: " + phone,
+            "Course interest / 课程: " + course,
+            "Preferred start / 入学: " + (intake || "Not specified"),
+            "Message / 留言: " + (message || "-")
+          ];
+        }
+        window.open(waLink(WA_ANG, lines.join("\n")), "_blank", "noopener,noreferrer");
+        var ok = document.getElementById("formSuccess");
+        if (ok) ok.hidden = false;
+      });
+
+      document.querySelectorAll("[data-intent='trial']").forEach(function (el) {
+        el.addEventListener("click", function () {
+          var trial = document.querySelector("input[name='intent'][value='trial']");
+          if (trial) trial.checked = true;
+        });
+      });
+
+      function refreshFormErrors() {
+        var pack = packLang();
+        var checks = [
+          { id: "name", ok: document.getElementById("name").value.trim(), msg: pack["reg.err.name"] },
+          { id: "phone", ok: document.getElementById("phone").value.trim(), msg: pack["reg.err.phone"] },
+          { id: "course", ok: document.getElementById("course").value, msg: pack["reg.err.course"] }
+        ];
+        var box = document.getElementById("formErrors");
+        var list = document.getElementById("formErrorList");
+        var missing = [];
+        checks.forEach(function (item) {
+          var stillBad = document.getElementById(item.id).getAttribute("aria-invalid") === "true" && !item.ok;
+          setFieldError(item.id, stillBad);
+          if (stillBad) missing.push(item);
+        });
+        if (!box.hidden) {
+          if (!missing.length) {
+            box.hidden = true;
+            list.innerHTML = "";
+          } else {
+            list.innerHTML = "";
+            missing.forEach(function (item) {
+              var li = document.createElement("li");
+              var a = document.createElement("a");
+              a.href = "#" + item.id;
+              a.textContent = item.msg;
+              li.appendChild(a);
+              list.appendChild(li);
+            });
+          }
+        }
+      }
+      ["name", "phone", "course"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener("input", refreshFormErrors);
+        el.addEventListener("change", refreshFormErrors);
+      });
+
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+      /* Reveal on scroll */
+      var revealEls = document.querySelectorAll(".reveal");
+      if (reduceMotion) {
+        revealEls.forEach(function (el) { el.classList.add("in"); });
+      } else if ("IntersectionObserver" in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add("in"); });
+      }
+
+      /* Parallax */
+      var heroBg = document.querySelector(".hero-bg");
+      var parallaxImgs = document.querySelectorAll("[data-parallax-img]");
+      function onScrollParallax() {
+        if (reduceMotion) return;
+        var sy = window.scrollY || 0;
+        if (heroBg) {
+          heroBg.style.transform = "translate3d(0," + (sy * 0.28) + "px,0) scale(1.08)";
+        }
+        parallaxImgs.forEach(function (img) {
+          var media = img.parentElement;
+          var rect = media.getBoundingClientRect();
+          var mid = rect.top + rect.height / 2 - window.innerHeight / 2;
+          var factor = parseFloat(img.getAttribute("data-parallax-img")) || 0.2;
+          img.style.transform = "translate3d(0," + (-mid * factor) + "px,0)";
+        });
+      }
+      if (!reduceMotion) {
+        window.addEventListener("scroll", onScrollParallax, { passive: true });
+        onScrollParallax();
+      }
+
+      /* Magnetic + tilt (system cursor stays visible) */
+      if (!isTouch && !reduceMotion) {
+        document.querySelectorAll(".magnetic").forEach(function (btn) {
+          if (btn.id === "floatWa") return;
+          btn.addEventListener("mousemove", function (e) {
+            var r = btn.getBoundingClientRect();
+            var x = e.clientX - (r.left + r.width / 2);
+            var y = e.clientY - (r.top + r.height / 2);
+            btn.style.transform = "translate(" + (x * 0.18) + "px," + (y * 0.18) + "px)";
+          });
+          btn.addEventListener("mouseleave", function () {
+            btn.style.transform = "translate(0,0)";
+          });
+        });
+
+        document.querySelectorAll(".tilt").forEach(function (card) {
+          card.addEventListener("mousemove", function (e) {
+            var r = card.getBoundingClientRect();
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            var rx = (py - 0.5) * -8;
+            var ry = (px - 0.5) * 10;
+            card.style.transform = "perspective(800px) rotateX(" + rx + "deg) rotateY(" + ry + "deg)";
+            card.style.setProperty("--mx", (px * 100) + "%");
+            card.style.setProperty("--my", (py * 100) + "%");
+          });
+          card.addEventListener("mouseleave", function () {
+            card.style.transform = "perspective(800px) rotateX(0) rotateY(0)";
+          });
+        });
+      }
+
+      /* Hero auto slideshow */
+      (function () {
+        var slides = Array.prototype.slice.call(document.querySelectorAll(".hero-slide"));
+        var dotsWrap = document.getElementById("heroDots");
+        if (slides.length < 2) return;
+        var idx = 0;
+        var timer = null;
+        slides.forEach(function (_, i) {
+          var b = document.createElement("button");
+          b.type = "button";
+          b.setAttribute("data-i18n-aria", "aria.slide");
+          b.setAttribute("data-n", String(i + 1));
+          var pack = I18N[document.documentElement.lang === "zh-CN" ? "zh" : "en"];
+          b.setAttribute("aria-label", (pack["aria.slide"] || "Show photo %s").replace("%s", String(i + 1)));
+          if (i === 0) b.classList.add("is-active");
+          b.addEventListener("click", function () { go(i); restart(); });
+          dotsWrap.appendChild(b);
+        });
+        var dots = Array.prototype.slice.call(dotsWrap.querySelectorAll("button"));
+        function go(n) {
+          idx = (n + slides.length) % slides.length;
+          slides.forEach(function (s, i) { s.classList.toggle("is-active", i === idx); });
+          dots.forEach(function (d, i) { d.classList.toggle("is-active", i === idx); });
+        }
+        function next() { go(idx + 1); }
+        function restart() {
+          if (timer) clearInterval(timer);
+          if (!reduceMotion) timer = setInterval(next, 5200);
+        }
+        restart();
+      })();
+
+      /* Video cards: each clip plays inside its own card, one at a time */
+      (function () {
+        var cards = document.querySelectorAll(".video-thumb");
+        if (!cards.length) return;
+        var videos = [];
+        cards.forEach(function (card) {
+          var video = card.querySelector("video");
+          var play = card.querySelector(".video-play");
+          if (!video || !play) return;
+          videos.push(video);
+          play.addEventListener("click", function () {
+            card.classList.add("is-playing");
+            video.controls = true;
+            var p = video.play();
+            if (p && p.catch) p.catch(function () { reset(); });
+          });
+          function reset() {
+            video.controls = false;
+            card.classList.remove("is-playing");
+          }
+          video.addEventListener("play", function () {
+            videos.forEach(function (v) { if (v !== video) v.pause(); });
+          });
+          video.addEventListener("ended", function () {
+            reset();
+            video.currentTime = 0.1;
+          });
+        });
+      })();
+
+      /* Lightbox for marquee */
+      (function () {
+        var box = document.getElementById("lightbox");
+        var img = document.getElementById("lightboxImg");
+        var cap = document.getElementById("lightboxCaption");
+        var closeBtn = document.getElementById("lightboxClose");
+        function openLb(src, caption, alt) {
+          img.src = src;
+          img.alt = alt || caption || "";
+          cap.textContent = caption || "";
+          box.hidden = false;
+          box.classList.add("open");
+          document.body.style.overflow = "hidden";
+          closeBtn.focus();
+        }
+        function closeLb() {
+          box.classList.remove("open");
+          box.hidden = true;
+          img.src = "";
+          document.body.style.overflow = "";
+        }
+        document.querySelectorAll(".marquee-item").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            openLb(btn.getAttribute("data-full") || btn.querySelector("img").src, btn.getAttribute("data-caption") || "", (btn.querySelector("img") || {}).alt);
+          });
+        });
+        closeBtn.addEventListener("click", closeLb);
+        box.addEventListener("click", function (e) { if (e.target === box) closeLb(); });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && box.classList.contains("open")) closeLb();
+        });
+      })();
+
+      /* ===== AI Chatbot (OpenRouter) ===== */
+      var chatFab = document.getElementById("chatFab");
+      var chatPanel = document.getElementById("chatPanel");
+      var chatClose = document.getElementById("chatClose");
+      var chatMessages = document.getElementById("chatMessages");
+      var chatForm = document.getElementById("chatForm");
+      var chatInput = document.getElementById("chatInput");
+      var chatHistory = [];
+      var chatBusy = false;
+      var chatSendBtn = chatForm.querySelector('button[type="submit"]');
+
+      function setChatBusy(busy) {
+        chatBusy = busy;
+        chatInput.disabled = busy;
+        if (chatSendBtn) chatSendBtn.disabled = busy;
+        document.querySelectorAll("#chatQuick button").forEach(function (b) { b.disabled = busy; });
+      }
+
+      function extractReply(data) {
+        var msg = data && data.choices && data.choices[0] && data.choices[0].message;
+        if (!msg) return "";
+        var content = msg.content;
+        if (typeof content === "string") return content.trim();
+        if (Array.isArray(content)) {
+          return content.map(function (part) {
+            if (typeof part === "string") return part;
+            return part && (part.text || part.content) || "";
+          }).join("").trim();
+        }
+        return "";
+      }
+
+      function friendlyApiError(status, raw) {
+        var msg = "";
+        try {
+          var parsed = JSON.parse(raw);
+          if (typeof parsed.error === "string") {
+            msg = parsed.error;
+          } else if (parsed.error && typeof parsed.error.message === "string") {
+            msg = parsed.error.message;
+          } else if (typeof parsed.message === "string") {
+            msg = parsed.message;
+          }
+        } catch (e) {
+          msg = (raw || "").trim();
+        }
+        if (status === 401) return "The assistant key was rejected (401). Please WhatsApp Chef Ang at 017-864 0709.";
+        if (status === 402) return "The assistant is out of credits (402). Please WhatsApp Chef Ang at 017-864 0709.";
+        if (status === 429) return "Too many questions at once (429). Please wait a moment.";
+        if (msg) return "Error (" + status + "): " + msg;
+        return "I could not reach the assistant just now (Status " + status + "). Please message Chef Ang on WhatsApp: 017-864 0709.";
+      }
+
+      function escapeHtml(s) {
+        return String(s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function safeHref(url) {
+        try {
+          var u = new URL(url, "https://www.ppks.com.my");
+          if (u.protocol === "https:" || u.protocol === "http:" || u.protocol === "mailto:" || u.protocol === "tel:") {
+            return u.href;
+          }
+        } catch (e) {}
+        return "";
+      }
+
+      function renderChatHtml(text) {
+        var html = escapeHtml(text);
+        html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, function (_, label, url) {
+          var href = safeHref(url);
+          return href
+            ? '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>"
+            : label;
+        });
+        html = html.replace(/(^|[^"'>=])(https?:\/\/[^\s<]+)/g, function (_, pre, url) {
+          var trail = url.match(/[),.;]+$/) ? url.match(/[),.;]+$/)[0] : "";
+          var core = trail ? url.slice(0, -trail.length) : url;
+          var href = safeHref(core);
+          return href
+            ? pre + '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + core + "</a>" + trail
+            : pre + url;
+        });
+        html = html.replace(/017[-\s]?864[-\s]?0?709/g, function (m) {
+          return '<a href="https://wa.me/60178640709" target="_blank" rel="noopener noreferrer">' + m + "</a>";
+        });
+        html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+        html = html.replace(/\n/g, "<br>");
+        return html;
+      }
+
+      function appendBubble(role, text, isErr) {
+        var div = document.createElement("div");
+        div.className = "chat-bubble " + role + (isErr ? " err" : "");
+        if (role === "bot") div.innerHTML = renderChatHtml(text);
+        else div.textContent = text;
+        chatMessages.appendChild(div);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        return div;
+      }
+
+      function t(k) {
+        var lang = document.documentElement.lang === "zh-CN" ? "zh" : "en";
+        return (I18N[lang] && I18N[lang][k]) || I18N.en[k] || k;
+      }
+
+      function appendWaSuggestion() {
+        var wrap = document.createElement("div");
+        wrap.className = "chat-bubble bot";
+        wrap.innerHTML = t("chat.human") + ' <a class="btn btn-wa btn-sm chat-wa-cta" href="' +
+          waLink(WA_ANG, DEFAULT_MSG) + '" target="_blank" rel="noopener noreferrer">' + t("chat.wa") + "</a>";
+        chatMessages.appendChild(wrap);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      function openChat() {
+        chatPanel.classList.add("open");
+        chatFab.setAttribute("aria-expanded", "true");
+        if (!chatMessages.childElementCount) {
+          appendBubble("bot", t("chat.hello"));
+        }
+        setTimeout(function () { chatInput.focus(); }, 50);
+      }
+      function closeChat() {
+        chatPanel.classList.remove("open");
+        chatFab.setAttribute("aria-expanded", "false");
+      }
+
+      chatFab.addEventListener("click", function () {
+        if (chatPanel.classList.contains("open")) closeChat();
+        else openChat();
+      });
+      chatClose.addEventListener("click", closeChat);
+
+      document.getElementById("chatQuick").addEventListener("click", function (e) {
+        var btn = e.target.closest("button[data-q]");
+        if (!btn) return;
+        chatInput.value = btn.getAttribute("data-q");
+        chatForm.requestSubmit();
+      });
+
+      async function askOpenRouter(userText) {
+        chatHistory.push({ role: "user", content: userText });
+        setChatBusy(true);
+        var typing = document.createElement("div");
+        typing.className = "chat-typing";
+        typing.textContent = t("chat.thinking");
+        chatMessages.appendChild(typing);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        try {
+          var payload = JSON.stringify({ messages: chatHistory });
+          var endpoints = [
+            "api/ask.php",
+            "api/index.php",
+            "/api/ask.php",
+            "/api/index.php",
+            "api/chat.php",
+            "/api/chat.php"
+          ];
+          var res = null;
+          var lastStatus = 0;
+          for (var i = 0; i < endpoints.length; i++) {
+            try {
+              var candidate = await fetch(endpoints[i], {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: payload
+              });
+              if (candidate && candidate.ok) {
+                res = candidate;
+                break;
+              }
+              if (candidate && (candidate.status === 404 || candidate.status === 403)) {
+                lastStatus = candidate.status;
+                continue;
+              }
+              res = candidate;
+              break;
+            } catch (netErr) {}
+          }
+          if (!res) {
+            if (lastStatus === 403) {
+              throw new Error("Hosting security blocked request (403). On InfinityFree, please upload api/ask.php or api/index.php (InfinityFree restricts files named 'chat').");
+            }
+            throw new Error("Could not reach backend assistant API. Please verify api/ask.php is uploaded.");
+          }
+          var raw = await res.text();
+          typing.remove();
+          if (!res.ok) {
+            throw new Error(friendlyApiError(res.status, raw));
+          }
+          var data = JSON.parse(raw);
+          var reply = extractReply(data) || "I could not generate a reply. Please WhatsApp Chef Ang at 017-864 0709.";
+          chatHistory.push({ role: "assistant", content: reply });
+          appendBubble("bot", reply);
+          if (/whatsapp|register|chef ang|contact/i.test(userText + " " + reply)) {
+            appendWaSuggestion();
+          }
+        } catch (err) {
+          if (typing.parentNode) typing.remove();
+          var fallback = err && err.message && !/fetch|network|failed/i.test(err.message)
+            ? err.message
+            : t("chat.fail");
+          appendBubble("bot", fallback, true);
+          appendWaSuggestion();
+          console.error(err);
+        } finally {
+          setChatBusy(false);
+          chatInput.focus();
+        }
+      }
+
+      chatForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (chatBusy) return;
+        var text = chatInput.value.trim();
+        if (!text) return;
+        appendBubble("user", text);
+        chatInput.value = "";
+        askOpenRouter(text);
+      });
+    })();
+  </script>
+</body>
+</html>
