@@ -1,4 +1,5 @@
 <?php
+set_time_limit(100);
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
@@ -160,18 +161,24 @@ Registration:
 When you mention campus, include: [Open in Google Maps](https://maps.app.goo.gl/9gJ88r6btWrmy1DQA)
 When you mention WhatsApp or register, include: [WhatsApp Chef Ang](https://wa.me/60178640709)
 When you mention the website: [www.ppks.com.my](https://www.ppks.com.my)
-Put each link on its own line. Never invent other URLs.
+Put each link on its own line. Always format links using standard markdown [Label](URL). Never output raw HTML <a> tags. Never invent other URLs.
 
-Short, warm, professional.
+OUTPUT FORMAT REQUIREMENTS:
+- Output ONLY the final customer-facing reply to the user.
+- Never output internal thinking, analysis, checklists, chain-of-thought, scratchpad, or drafting notes (e.g. do NOT output "1. Analyze the Request" or "Constraint Checklist").
+- Short, warm, professional.
 EOT;
 
 $allMessages = array_merge([['role' => 'system', 'content' => $systemPrompt]], $messages);
 
 $payload = json_encode([
-    'model'       => 'qwen/qwen3-235b-a22b-2507',
+    'model'       => 'openrouter/free',
     'messages'    => $allMessages,
     'temperature' => 0.4,
-    'max_tokens'  => 700,
+    'max_tokens'  => 1500,
+    'reasoning'   => [
+        'exclude' => true,
+    ],
 ]);
 
 $ch = curl_init('https://openrouter.ai/api/v1/chat/completions');
@@ -185,7 +192,8 @@ curl_setopt_array($ch, [
         'HTTP-Referer: https://www.ppks.com.my',
         'X-Title: PPKS Landing Chat',
     ],
-    CURLOPT_TIMEOUT        => 30,
+    CURLOPT_TIMEOUT        => 90,
+    CURLOPT_CONNECTTIMEOUT => 15,
     CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_SSL_VERIFYHOST => false,
     CURLOPT_FOLLOWLOCATION => true,
@@ -201,6 +209,17 @@ if ($curlErr) {
     header('Content-Type: application/json');
     echo json_encode(['error' => 'Could not reach assistant: ' . $curlErr]);
     exit;
+}
+
+if ($httpCode >= 200 && $httpCode < 300 && $response) {
+    $decoded = json_decode($response, true);
+    if (isset($decoded['choices'][0]['message']['content']) && is_string($decoded['choices'][0]['message']['content'])) {
+        $c = $decoded['choices'][0]['message']['content'];
+        $c = preg_replace('/<think>[\s\S]*?<\/think>/i', '', $c);
+        $c = preg_replace('/^(?:(?:1\.\s*)?Analyze the Request[\s\S]*?(?:(?:2\.\s*)?Drafting the Content(?:\s*\(.*?\))?:?|Final (?:Response|Answer):?)\s*)/i', '', $c);
+        $decoded['choices'][0]['message']['content'] = trim($c);
+        $response = json_encode($decoded);
+    }
 }
 
 http_response_code($httpCode);

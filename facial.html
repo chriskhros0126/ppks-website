@@ -6,19 +6,19 @@
   <title>PPKS Facial Beauty Courses Kota Kinabalu | Waitlist (Coming Soon)</title>
   <meta name="description" content="PPKS Facial / beauty courses in Kota Kinabalu are coming soon and not open yet. Join the waitlist via WhatsApp Chef Ang 017-864 0709. Part of Pusat Pembangunan Kemahiran Sabah." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <link rel="canonical" href="https://ppks-landing.vercel.app/facial.html" />
+  <link rel="canonical" href="https://www.ppks.com.my/facial.html" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PPKS Baking &amp; Cooking Academy" />
-  <meta property="og:url" content="https://ppks-landing.vercel.app/facial.html" />
+  <meta property="og:url" content="https://www.ppks.com.my/facial.html" />
   <meta property="og:title" content="PPKS Facial | Kota Kinabalu Waitlist" />
   <meta property="og:description" content="Facial beauty courses coming soon — not open yet. Join the waitlist with Chef Ang on WhatsApp 017-864 0709." />
-  <meta property="og:image" content="https://ppks-landing.vercel.app/assets/og-share.jpg" />
+  <meta property="og:image" content="https://www.ppks.com.my/assets/og-share.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="PPKS Facial | Kota Kinabalu Waitlist" />
   <meta name="twitter:description" content="Facial beauty courses coming soon. WhatsApp Chef Ang 017-864 0709 to join the waitlist." />
-  <meta name="twitter:image" content="https://ppks-landing.vercel.app/assets/og-share.jpg" />
+  <meta name="twitter:image" content="https://www.ppks.com.my/assets/og-share.jpg" />
   <meta name="theme-color" content="#8b2635" />
   <meta name="color-scheme" content="light" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,9 +31,9 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "PPKS Facial Beauty Waitlist",
-    "url": "https://ppks-landing.vercel.app/facial.html",
+    "url": "https://www.ppks.com.my/facial.html",
     "description": "PPKS Facial / beauty courses in Kota Kinabalu are coming soon and not yet open. Join the waitlist via WhatsApp.",
-    "isPartOf": { "@id": "https://ppks-landing.vercel.app/#website" },
+    "isPartOf": { "@id": "https://www.ppks.com.my/#website" },
     "about": {
       "@type": "Course",
       "name": "Facial / Beauty Courses",
@@ -41,7 +41,7 @@
       "provider": {
         "@type": "EducationalOrganization",
         "name": "PPKS Baking & Cooking Academy",
-        "url": "https://ppks-landing.vercel.app/"
+        "url": "https://www.ppks.com.my/"
       }
     }
   }
@@ -228,7 +228,41 @@
     }
     .chat-input-row button:disabled { opacity: 0.55; cursor: wait; }
     .chat-typing { font-size: 0.78rem; color: var(--text-muted); padding: 0 0.2rem; }
-    .chat-wa-cta { margin-top: 0.5rem; display: inline-flex; max-width: 100%; }
+    .chat-bubble a.chat-wa-cta,
+    a.chat-wa-cta {
+      margin-top: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      background: var(--liver);
+      color: #ffffff !important;
+      border: 1.5px solid var(--liver);
+      border-radius: 980px;
+      font-weight: 600;
+      text-decoration: none !important;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .chat-bubble a.chat-wa-cta:visited,
+    a.chat-wa-cta:visited {
+      color: #ffffff !important;
+    }
+    .chat-bubble a.chat-wa-cta:hover,
+    a.chat-wa-cta:hover {
+      background: #ffffff !important;
+      color: var(--liver) !important;
+      border-color: var(--liver) !important;
+      text-decoration: none !important;
+    }
+    .chat-bubble a.chat-wa-cta:hover:visited,
+    a.chat-wa-cta:hover:visited {
+      color: var(--liver) !important;
+    }
+    .chat-bubble a.chat-wa-cta:focus-visible,
+    a.chat-wa-cta:focus-visible {
+      outline: 2px solid var(--liver);
+      outline-offset: 2px;
+    }
     @media (max-width: 640px) {
       .float-wa, .chat-fab { width: 48px; height: 48px; }
       .float-wa svg { width: 26px; height: 26px; }
@@ -361,7 +395,7 @@
         "chat.ph": "Ask a question…",
         "chat.input": "Your message",
         "chat.hello": "Hi. Facial courses are coming soon and not open yet. I can help with the waitlist, location, or kitchen courses.",
-        "chat.human": "Want to talk to a person?",
+        "chat.human": "Ready to talk to a human?",
         "chat.wa": "WhatsApp Chef Ang",
         "chat.thinking": "Thinking…",
         "chat.fail": "I could not reach the assistant just now. Please WhatsApp Chef Ang: 017-864 0709.",
@@ -516,14 +550,17 @@
         var msg = data && data.choices && data.choices[0] && data.choices[0].message;
         if (!msg) return "";
         var content = msg.content;
-        if (typeof content === "string") return content.trim();
-        if (Array.isArray(content)) {
-          return content.map(function (part) {
+        var text = "";
+        if (typeof content === "string") text = content;
+        else if (Array.isArray(content)) {
+          text = content.map(function (part) {
             if (typeof part === "string") return part;
             return part && (part.text || part.content) || "";
-          }).join("").trim();
+          }).join("");
         }
-        return "";
+        text = text.replace(/<think>[\s\S]*?<\/think>/gi, "");
+        text = text.replace(/^(?:(?:1\.\s*)?Analyze the Request[\s\S]*?(?:(?:2\.\s*)?Drafting the Content(?:\s*\(.*?\))?:?|Final (?:Response|Answer):?)\s*)/i, "");
+        return text.trim();
       }
       function friendlyApiError(status) {
         if (status === 401) return "The assistant key was rejected. Please WhatsApp Chef Ang at 017-864 0709.";
@@ -539,6 +576,11 @@
           .replace(/"/g, "&quot;");
       }
       function safeHref(url) {
+        if (!url) return "";
+        url = String(url).trim();
+        if (/^(?:wa\.me\/|www\.)/i.test(url)) {
+          url = "https://" + url;
+        }
         try {
           var u = new URL(url, "https://www.ppks.com.my");
           if (u.protocol === "https:" || u.protocol === "http:" || u.protocol === "mailto:" || u.protocol === "tel:") {
@@ -548,22 +590,51 @@
         return "";
       }
       function renderChatHtml(text) {
-        var html = escapeHtml(text);
-        html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, function (_, label, url) {
+        var html = escapeHtml(text || "");
+        var tokens = [];
+        function addToken(htmlSnippet) {
+          var id = "%%%CHAT_LINK_" + tokens.length + "%%%";
+          tokens.push(htmlSnippet);
+          return id;
+        }
+
+        // 1. Markdown links: [label](url)
+        html = html.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (_, label, url) {
           var href = safeHref(url);
-          return href ? '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>" : label;
+          if (href) {
+            return addToken('<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>");
+          }
+          return label;
         });
-        html = html.replace(/(^|[^"'>=])(https?:\/\/[^\s<]+)/g, function (_, pre, url) {
+
+        // 2. Raw URLs (e.g. https://... or http://... or wa.me/...)
+        html = html.replace(/(^|[^"'>=\w])(https?:\/\/[^\s<]+|wa\.me\/[^\s<]+)/g, function (_, pre, url) {
           var trail = url.match(/[),.;]+$/) ? url.match(/[),.;]+$/)[0] : "";
           var core = trail ? url.slice(0, -trail.length) : url;
           var href = safeHref(core);
-          return href ? pre + '<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + core + "</a>" + trail : pre + url;
+          if (href) {
+            return pre + addToken('<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + core + "</a>") + trail;
+          }
+          return pre + url;
         });
-        html = html.replace(/017[-\s]?864[-\s]?0?709/g, function (m) {
-          return '<a href="https://wa.me/60178640709" target="_blank" rel="noopener noreferrer">' + m + "</a>";
+
+        // 3. Chef Ang phone numbers
+        html = html.replace(/(^|[^\w/])(?:\+?60|0)?17[-\s]?864[-\s]?0?709(?!\w)/g, function (fullMatch, pre) {
+          var numberStr = fullMatch.slice(pre.length);
+          return pre + addToken('<a href="https://wa.me/60178640709" target="_blank" rel="noopener noreferrer">' + numberStr + "</a>");
         });
+
+        // 4. Bold text
         html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+
+        // 5. Line breaks
         html = html.replace(/\n/g, "<br>");
+
+        // 6. Restore tokens
+        for (var i = 0; i < tokens.length; i++) {
+          html = html.replace("%%%CHAT_LINK_" + i + "%%%", tokens[i]);
+        }
+
         return html;
       }
       function appendBubble(role, text, isErr) {
@@ -578,7 +649,7 @@
       function appendWaSuggestion() {
         var wrap = document.createElement("div");
         wrap.className = "chat-bubble bot";
-        wrap.innerHTML = t("chat.human") + ' <a class="btn btn-wa btn-sm chat-wa-cta" href="' +
+        wrap.innerHTML = '<div>' + t("chat.human") + '</div><a class="btn btn-wa btn-sm chat-wa-cta" href="' +
           waLink(WA, DEFAULT_MSG) + '" target="_blank" rel="noopener noreferrer">' + t("chat.wa") + "</a>";
         chatMessages.appendChild(wrap);
         chatMessages.scrollTop = chatMessages.scrollHeight;
